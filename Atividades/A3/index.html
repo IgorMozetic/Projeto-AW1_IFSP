@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atividade 3 - Elementos Web">
+    <meta name="keywords" content="HTML">
+    <meta name="author" content="Igor Mozetic">
+    <title>Atividade 3</title>
+    <!-- tag de favicon, icone na barra la de cima da pag -->
+    <link rel="icon"
+        href="https://media-exp1.licdn.com/dms/image/C4E03AQHRNM0arZyxiQ/profile-displayphoto-shrink_200_200/0/1617739209299?e=1627516800&v=beta&t=MSaFKKa7OyNawd36xRpdAo_3XrSVAYDaH_PDePqX6ik"
+        size=“16x16">
+
+</head>
+
+<body>
+    <!-- olá, eu sou um comentário -->
+
+    <!-- Tag de título de h1 até o h6  -->
+    <h1>Este é o título 1</h1>
+    <h2>Este é o título 2</h2>
+    <h3>Este é o título 3</h3>
+    <h4>Este é o título 4</h4>
+    <h5>Este é o título 5</h5>
+    <h6>Este é o título 6</h6>
+
+    <!-- Tag de paragrafo -->
+    <p>Este é o parágrafo</p>
+
+    <!-- Esta é a tag pre que deixa o texto bonitinho do jeito que você montar no HTML-->
+    <p>
+    <pre>
+    Eu só digo uma coisa: 
+        Eu não digo é nada...
+            E ainda digo mais:
+                Eu só digo isso!
+    </pre>
+    </p>
+
+    <!-- Esta é uma tag de lista  -->
+    <!-- Pode-se colocar disc, circle, square e nome -->
+    <ul style="list-style-type:disc;">
+        <li>Igor</li>
+        <li>é</li>
+        <li>Lindo</li>
+    </ul>
+
+    <!-- Esta é uma tag de lista  -->
+    <!-- Pode-se colocar 1(númericos), A(letras maiúsculas), a(letras minúsculas), I(número romanos maiusculos) e i(número romanos minúsculos)  -->
+    <ol type="1">
+        <li>Igor</li>
+        <li>é</li>
+        <li>Lindo</li>
+    </ol>
+
+    <!-- Tag de imagem link absoluto -->
+    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHRNM0arZyxiQ/profile-displayphoto-shrink_200_200/0/1617739209299?e=1627516800&v=beta&t=MSaFKKa7OyNawd36xRpdAo_3XrSVAYDaH_PDePqX6ik"
+        alt="linkedin.com" display: "block">
+
+    <!-- Tag de imagem link relativo -->
+    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHRNM0arZyxiQ/profile-displayphoto-shrink_200_200/0/1617739209299?e=1627516800&v=beta&t=MSaFKKa7OyNawd36xRpdAo_3XrSVAYDaH_PDePqX6ik"
+        alt="linkedin.com">
+
+    <!-- Tag de link, target pode ser _blank (nova janela), _self (mesma aba), _parent (abre o link no quadro pai), _top -->
+    <!-- (abre o corpo completo da janela) -->
+    <a href="https://github.com/IgorMozetic" target='_blank'> Github do Igu </a>
+
+    <!-- tag de link pela imagem  -->
+    <a href="https://github.com/IgorMozetic" target="_blank">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHRNM0arZyxiQ/profile-displayphoto-shrink_200_200/0/1617739209299?e=1627516800&v=beta&t=MSaFKKa7OyNawd36xRpdAo_3XrSVAYDaH_PDePqX6ik"
+            alt="Github">
+    </a>
+
+    <!-- Tag de tabela e seus afiliados -->
+    <table>
+        <!--cabeçalho da tabela -->
+        <thead>
+            <!--table row -->
+            <tr>
+                <th>Mês</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <!--dados da tabela -->
+        <tbody>
+            <tr>
+                <!--table data -->
+                <td>Janeiro</td>
+                <td>R$100</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$80</td>
+            </tr>
+        </tbody>
+        <!--rodapé da tabela -->
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>R$180</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- tabela com borda -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Março</td>
+                <td>R$200</td>
+            </tr>
+            <tr>
+                <td>Abril</td>
+                <td>R$50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>R$250</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Tabela  com cabeçalho ocupando duas colunas sem bordas -->
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Fone</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>55577854</td>
+            <td>55577855</td>
+        </tr>
+        <tr>
+            <td>Igor</td>
+            <td>987654321</td>
+            <td>123456789</td>
+        </tr>
+    </table>
+
+    <!-- Tabela  com cabeçalho ocupando duas colunas com bordas -->
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Celular</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>55577854</td>
+            <td>55577855</td>
+        </tr>
+        <tr>
+            <td>Igor</td>
+            <td>987654321</td>
+            <td>123456789</td>
+        </tr>
+    </table>
+
+    <!-- Tabela com cabeçalho ocupando duas linhas sem bordas  -->
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Igor</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Celular:</th>
+            <td>987654321</td>
+        </tr>
+        <tr>
+            <td>123456789</td>
+        </tr>
+    </table>
+
+    <!-- Tabela com cabeçalho ocupando duas linhas com bordas -->
+    <table border="1">
+        <tr>
+            <th>Name:</th>
+            <td>Igor</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Celular:</th>
+            <td>987654321</td>
+        </tr>
+        <tr>
+            <td>123456789</td>
+        </tr>
+    </table>
+
+    <!-- Tag de elementos para a definição de texto com um significados especial: -->
+    <p>texto <strong>forte</strong></p>
+    <p>texto <em>enfatizado</em></p>
+    <p>texto <small>pequenino</small></p>
+    <p>texto <mark>marca texto</mark></p>
+    <p>texto <del>riscado</del></p>
+    <p>texto <ins>sublinhado</ins></p>
+    <p>O<sub>2</sub></p>
+    <p>2<sup>2</sup> + 2 = 6 </p>
+
+    <!-- Tag de citação breve -->
+    <p>Segundo William Shakespeare:
+        <q>Ser ou não ser, eis a questão.</q>
+    </p>
+
+    <!-- tag de citação de outra fonte -->
+    <blockquote cite="https://www.pensador.com/frase/MTM2MQ/">
+        Se A é o sucesso, então A é igual a X mais Y mais Z. O trabalho é X; Y é o lazer; e Z é manter a boca fechada.
+    </blockquote>
+
+    <!-- tag de abreviatura ou acrônimo -->
+    <p>
+        O <abbr title="Sport Clube Corinthians Paulista">SCCP</abbr>
+        foi criado em 1910.
+    </p>
+
+    <!-- tag de elemento de contato -->
+    <address>
+        Endereço: R. Oscar Freire, 2250 - Pinheiros
+        São Paulo - SP,
+        05409-011.
+    </address>
+
+    <!-- Tag de título de obras -->
+    <img src="https://www.saiacomarte.com/wp-content/uploads/2017/08/monalisa.jpg" width="220" height="277">
+    <p>
+        <cite>Monalisa</cite>
+        por Leonardo di Ser Piero da Vinci. Pintado em 1503.
+    </p>
+
+    <!-- Tag de direção de texto -->
+    <bdo dir="ltr">
+        Este texto está escrito normal.
+    </bdo>
+
+    <bdo dir="rtl">
+        Este texto está escrito da direita para a esquerda.
+    </bdo>
+
+    <!-- valores indicados em linha e em bloco -->
+    <p>
+        Este trecho de texto é um elemento em linha (inline)
+        <span style="border: 1px solid black">Elemento em Linha</span>
+        o elemento está dentro de um parágrafo.
+    </p>
+    <p>
+        Este trecho de texto é um elemento em bloco (block)
+    <div style="border: 1px solid black">Elemento em Bloco</div>
+
+    <!-- Tag para acrescentar uma pág web dentro de outra pág web -->
+    <h2>Iframe</h2>
+    <iframe height="700px" width="100%" src="https://www.corinthians.com.br/" name="iframe_a">
+    </iframe>
+    <p><a href="https://www.ifsp.edu.br/" target="iframe_a">Site do IFSP</a></p>
+
+    <!-- tag vídeo fora do youtube, autoplays(inicia o vídeo qunado a pag iniciar), controls(exibe os controles do vídeo pro usuário)-->
+    <video width="400" height="240" controls>
+        <source
+            src="https://vod-progressive.akamaized.net/exp=1621998050~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2911%2F21%2F539556004%2F2559147680.mp4~hmac=a1515fe19f41c51f1b672ca9a581687cca1b865eb00ba354ead56ebe34168737/vimeo-prod-skyfire-std-us/01/2911/21/539556004/2559147680.mp4?filename=pexels-roman-odintsov-7592907.mp4"
+            type="video/mp4">
+    </video>
+
+    <!-- Tag de audio, mesmos controles do de vídeo-->
+    <audio controls>
+        <source src="https://freesound.org/data/previews/476/476178_6101353-lq.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- tag de video do youtube, embed é quem faz o link funcionar-->
+    <iframe width="600" height="315" src="https://www.youtube.com/embed/X6IsmJz1-Ak">
+    </iframe>
+</body>
+
+</html>
