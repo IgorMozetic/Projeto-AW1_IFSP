@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1>Formulario do Iguinho Mozetic</h1>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais do usuário</legend>
+            <label for="nome">Primeiro nome:</label>
+            <input type="text" id="nome" name="nome" required autocomplete="off" size="20" placeholder="Zé" autofocos>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required autocomplete="off" size="20"
+                placeholder="Ninguém"><br><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required autocomplete="off" size="20">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" maxlenght="50" required autocomplete="off" size="20"
+                placeholder="ze@gmail.com"><br><br>
+            <label for="phone">Telefone:</label>
+            <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(99) 9999-9999"
+                pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})"
+                title="Número de telefone precisa ser no formato (99) 9999-9999" size="20">
+            <label for=" festa">Data de nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento" min="1940-01-01" max="2018-12-31" required
+                autocomplete="off" size="20">
+        </fieldset>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="jogadores">Escolha o seu jogador favorito</label>
+        <select id="jogadores" name="jogadores">
+            <option value="null">-</option>
+            <option value="Neymar Junior">Neymar Junior</option>
+            <option value="Cristiano Ronaldo">Cristiano Ronaldo</option>
+            <option value="Lionel Messi">Lionel Messi</option>
+            <option value="Ribamar DEUS">Ribamar DEUS</option>
+            <option value="Kylian Mbappé">Kylian Mbappé</option>
+            <option value="Mohamed Salah">Mohamed Salah</option>
+        </select>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="">Fale um pouco como foi a sua passada pela Europa</label><br>
+        <textarea name="message" rows="13" cols="45">
+        </textarea>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="Carros">Carros TOPZERA</label>
+        <input list="carros" id="car">
+        <datalist id="carros" name="carros">
+            <option value="Ferrari">
+            <option value="Bugatti">
+            <option value="Porsche">
+            <option value="McLaren">
+            <option value="Gol com escada">
+            <option value="Uno bolinha">
+            <option value="Audi">
+            <option value="Mercedes">
+        </datalist>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="file">Selecione seu ARQUIVÃO DAMASSA CLÃ</label>
+        <input type="file" id="file" name="file" multiple>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="quantidade">Satisfação de 0 à 10:</label><br>
+        <input type="range" id="quantidade" name="quantidade" min="0" max="10" step="1" value="-">
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="quantidade">Satisfação de 0 à 10: (com readonly)</label><br>
+        <input type="number" id="quantidade" name="quantidade" min="0" max="10" step="1" value="-" readonly>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label>Escolha quem é o jogador que tem mais drip </label><br>
+        <input type="radio" id="ney" name="drip" value="Neymar">
+        <label for="ney">Neymar</label><br>
+        <input type="radio" id="gabi" name="drip" value="Gabibol">
+        <label for="gabi">Gabibol</label><br>
+        <input type="radio" id="pogba" name="drip" value="Pogba">
+        <label for="pogba">Pogba</label><br>
+        <input type="radio" id="igor" name="drip" value="igor">
+        <label for="igor">Igor no Interclasse</label><br>
+        <input type="radio" id="zeca" name="drip" value="Zeca Urubu">
+        <label for="zeca">Zeca Urubu</label><br>
+        <input type="radio" id="Romero" name="drip" value="Romero">
+        <label for="Romero">Angel Romero</label>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <input type="checkbox" id="pau" name="pau" value="pau">
+        <label for="pau">É pau</label><br>
+        <input type="checkbox" id="pedra" name="pedra" value="pedra">
+        <label for="pedra">É pedra</label><br>
+        <input type="checkbox" id="fim" name="fim" value="fim">
+        <label for="fim">É o fim</label><br>
+        <input type="checkbox" id="caminho" name="caminho" value="caminho">
+        <label for="caminho">do caminho</label>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="cor">Selecione sua cor braba da vida meu caro amigo ou minha cara amiga:</label>
+        <input type="color" id="cor" name="cor">
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="homepage">Adicione a sua url favorita aqui</label>
+        <input type="url" id="homepage" name="homepage">
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <label for="pesquisa">Pesquise aqui meu cumpadi:</label>
+        <input type="search" id="pesquisa" name="pesquisa" required>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <fieldset>
+            <legend>Botões dos brabitos</legend>
+            <input type="submit" value="Confirmar envio">
+            <input type="button" onclick="alert('Aunque digan que soy Un bandolero donde voy')"
+                value="Aperte Aqui e veja a mágica">
+            <input type="reset" value="Apagar tudo mermão">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
