@@ -1,2 +1,1 @@
-# Projeto-AW1_IFSP
-Esse repositório tem os códigos realizados a pedido do Professor Johnata no deccorrer do ano letivo.
+O Pdf do Protótipo da página 1 ultrapassou os 25Mb permitidos aqui no github para realizar o upload, portanto, subi um .jpg com a primeira página e a página de contato eu coloquei em pdf
