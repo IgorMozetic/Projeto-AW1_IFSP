@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML - Aula 2</title>
+    <!-- Favicon = icone da barra -->
+    <link rel="icon" href="icon.png" size="16x16">
+
+</head>
+
+<body>
+    <h1>Aula 2</h1>
+
+    <!-- Criação de Tabela -->
+    <h4>Tabelas</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Mês</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- tr = table row -->
+                <td>Janeiro</td> <!-- td = table data -->
+                <td>R$100</td>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$80</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>R$180</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Expandir Coluna = colspan -->
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th colspan="2">Fone</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>55577854</td>
+            <td>55577855</td>
+        </tr>
+    </table>
+    <br>
+    <!-- Expandir Linha = colspan -->
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>Bill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Fone:</th>
+            <td>55577854</td>
+        </tr>
+        <tr>
+            <td>55577855</td>
+        </tr>
+    </table>
+
+    <!-- Marcação de Texto -->
+    <h4>Marcação de Texto</h4>
+    <p>texto <strong>forte</strong>.</p>
+    <p>texto <em>enfatizado</em>.</p>
+    <p>texto <small>pequeno</small>.</p>
+    <p>texto <mark>marcado</mark>.</p>
+    <p>texto <del>deletado</del>.</p>
+    <p>texto <ins>adicionado</ins>.</p>
+    <p>H<sub>2</sub>O.</p>
+    <p>X<sup>2</sup>+2=0.</p>
+
+    <!-- Citação Curta -->
+    <h4>Citação</h4>
+    <p>Segundo Guimarães Rosa:
+        <q>É junto dos bão que a gente fica mió.</q>
+    </p>
+
+    <br>
+    <!-- Citação de outra fonte -->
+    <blockquote cite="https://www.pensador.com/frase/MjY2MDc/">
+        Deus quer, o homem sonha a obra nasce.
+    </blockquote>
+
+    <br>
+    <!-- Citação de abreviatura -->
+    <p>
+        O <abbr title="HyperText Markup Language">HTML</abbr>
+        foi criado em 1990.
+    </p>
+
+    <!-- Endereço -->
+    <h4>Endereço</h4>
+    <address>
+        <pre>
+            Endereço: R. Men de Sá, 800 - Bom Sucesso,
+            Gravataí - RS,
+            94135-310
+        </pre>
+    </address>
+
+    <!-- Define título de uma Obra -->
+    <h4>Citação de Obra</h4>
+    <img src="https://www.w3schools.com/html/img_the_scream.jpg" width="220" height="277">
+    <p>
+        <cite>The Scream</cite>
+        por Edvard Munch. Pintado em 1893.
+    </p>
+
+    <!-- Texto da direita para a esquerda-->
+    <h4>Texto da Direita para Esquerda</h4>
+    <bdo dir="rtl">
+        Este texto está escrito da direita para a esquerda.
+    </bdo>
+
+    <!-- Texto da esquerda para a direita -->
+    <h4>Texto da Esquerda para Direita</h4>
+    <bdo dir="lrt">
+        Este texto está escrito da direita para a esquerda.
+    </bdo>
+
+    <!-- Elemento em linha -->
+    <h4>Elemento em Linha</h4>
+    <p>
+        Span é um elemento em linha (inline)
+        <span style="border: 1px solid black">Elemento em Linha</span>
+        o elemento está dentro de um parágrafo.
+    </p>
+
+    <!-- Elemento em bloco -->
+    <h4>Elemento em Bloco</h4>
+    <p>
+        Div é um elemento em bloco (block)
+    <div style="border: 1px solid black">Elemento em Bloco</div>
+    o elemento está dentro de um parágrafo.
+    </p>
+
+    <!-- Iframe = coloca um html dentro do outro -->
+    <h4>Iframe - coloca um html dentro do outro</h4>
+    <iframe height="500px" width="100%" src="http://www.eitas.com.br/tutoriais/" name="iframe_a">
+    </iframe>
+    <p><a href="http://www.ifsul.edu.br/" target="iframe_a">Site do Ifsul</a></p>
+
+    <!-- Colocar Vídeo -->
+    <h4>Vídeo</h4>
+    <video width="400" height="240" controls autoplay>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+    </video>
+
+    <!-- Colocar audio -->
+    <h4>Áudio</h4>
+    <audio controls autoplay>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Colocar vídeo do YouTube = embed -->
+    <h4>Vídeo do YouTube</h4>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/UOxkGD8qRB4">
+    </iframe>
+
+</body>
+
+</html>

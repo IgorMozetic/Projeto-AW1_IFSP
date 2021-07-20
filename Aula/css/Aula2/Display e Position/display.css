@@ -1,0 +1,54 @@
+ul, li{list-style: none;}
+
+*{
+    margin:0; 
+    padding:0; 
+    border:0;
+}
+
+body{
+    font-size: 25px;
+}
+
+.example{ 
+    color: #fff; 
+}
+
+.item{ 
+    width:25%; 
+    height: 150px;
+    /* elementos em linha */
+    /* display: inline; */
+    
+    /* elemento em linha com algumas características em bloco*/
+    /* display: inline-block; */
+
+    /* elementos em blocos */
+    /* display: block; */
+}
+
+.item_0{
+    background-color: blue;
+    /* retira o elemento */
+    display: none;
+}
+
+.item_1{ 
+    background-color: orange;
+    /* esconde a exibição do elemento */
+    visibility: hidden;
+}
+
+.item_2{ 
+    background-color: green;
+    /*Voltar o item para block*/
+    /* elementos filhos em linha */
+    display: flex;
+    
+}
+
+.item_3{
+    background-color: red;
+    /* elementos filhos em grid */
+    display: grid;
+}

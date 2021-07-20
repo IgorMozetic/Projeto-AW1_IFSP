@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários - Aula 4</title>
+    <style>
+        label,
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Id e Class -->
+    <p class="formulario" id="p1">
+        Preencha o formulário
+    </p>
+
+    <!-- Formulário -->
+    <form action="" method="get">
+
+        <!-- Agrupar dados em um retângulo -->
+        <fieldset>
+            <!-- Legenda do fieldset -->
+            <legend>Dados Pessoais:</legend>
+            <!-- Um Rótulo -->
+            <label for="idNome">Nome:</label>
+            <!-- Entrada de dados -->
+            <input type="text" id="idNome" name="nome" required="required" autofocus>
+
+            <label for="idSobrenome">Sobrenome:</label>
+            <input type="text" id="idSobrenome" name="sobrenome">
+        </fieldset>
+
+        <label for="idCarro">Carro:</label>
+        <!-- Select -->
+        <select name="CARRO" id="idCarro">
+            <option value="volvo">Volvo</option>
+            <option value="fiat">Fiat</option>
+            <option value="honda">Honda</option>
+        </select>
+
+        <label for="idBrowser">Escolha um browser:</label>
+        <!-- É possivel escrever a opção -->
+        <input list="idBrowsers" name="browser" id="idBrowser">
+        <datalist id="idBrowsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <label for="idMenssagem">Mensagem:</label>
+        <!-- Texto -->
+        <textarea name="menssagem" id="idMenssagem" cols="40" rows="20"></textarea>
+
+        <!-- Botão submit-->
+        <input type="submit" value="Enviar">
+
+        <!-- Botão button -->
+        <input type="button" value="Menssagem button" onclick="alert('Olá!')">
+    </form>
+</body>
+
+</html>

@@ -3,40 +3,43 @@
     padding: 0;
 } 
 
-body {
+#pag1 {
     background: url(imgs/background_campo.jpeg);
-    width: 100vw;
-    height: 100vh;
     background-size: cover;
+    opacity: 0.5;
+    height: 100vh;
 }
 
 a {
     text-decoration: none;
     color: white;
+    opacity: 1;
 }
 
+header {
+    opacity: 1;
+}
 #lista {
     top: 0px;
     list-style: none;
     background-color: #262626;
-    width: 100vw;
     height: 7vh;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
     display: flex;
     justify-content: space-around;
+    padding-top: 25px;
+    opacity: 1;
 }
 
-#lista {
-    /* text-align: center; */
-    padding-top: 25px;
-    padding-left: -20px;
-}
 
 #title1 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    opacity: 1;
 }
 
 #title {
@@ -44,24 +47,27 @@ a {
     border-radius: 10px;
     text-align: center;
     margin-top: 3vh;
-    width: 37vw;
-    height: 10vh;
+    width: 37vw; 
     font-family: Patua One;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
     line-height: 44px;
     color: white;
+    padding: 2vh ;
+    opacity: 1;
 }
 
 #subtitle {
+    margin-top: 3vh;
     font-family: Patua One;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 24px;
     line-height: 29px;
-    font-weight: 400;
+    font-weight: 600;
     color: black;
+    opacity: 1;
 }
 
 .page-logo {
@@ -69,12 +75,12 @@ a {
     position: absolute;
     top: 13vh;
     margin-left: 5vw;
+    opacity: 1;
   }
 
 #lista_rodape {
     list-style: none;
     background-color: #262626;
-    width: 100vw;
     height: 7vh;
     text-align: center;
     font-family: Roboto;

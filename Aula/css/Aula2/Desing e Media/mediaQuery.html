@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        .example {
+            padding: 20px;
+            color: white;
+        }
+
+        /* Dispositivos extra pequenos (smartphones, 600px e inferior) */
+        @media only screen and (max-width: 600px) {
+            .example {
+                background: red;
+            }
+        }
+
+        /* Dispositivos pequenos (tablets modo paisagem e smartphones largos, 600px and up) */
+        @media only screen and (min-width: 600px) and (max-width: 768px) {
+            .example {
+                background: green;
+            }
+        }
+
+        /* Dispositivos médios (tablets modo paisagem, 768px e superior) */
+        @media only screen and (min-width: 768px) {
+            .example {
+                background: blue;
+            }
+        }
+
+        /* Dispositivos largos (notebooks ou desktops, 992px e superior) */
+        @media only screen and (min-width: 992px) {
+            .example {
+                background: orange;
+            }
+        }
+
+        /* Dispositivos extra largos (notebooks ou desktops, 1200px e superior) */
+        @media only screen and (min-width: 1200px) {
+            .example {
+                background: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Breakpoints comuns utilizando Media Query</h2>
+    <p class="example">
+        Redimensione a janela para ver a alteração de cor do background em diferentes tamanhos de janelas.
+    </p>
+</body>
+
+</html>

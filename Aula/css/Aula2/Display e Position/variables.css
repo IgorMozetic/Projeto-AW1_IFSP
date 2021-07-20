@@ -1,0 +1,14 @@
+:root {
+    --azul: #6495ed;
+    --largura: 200px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: var(--azul);
+}
+
+h2{
+    color: var(--azul);
+}

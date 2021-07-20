@@ -1,0 +1,16 @@
+div {
+    background-color: lightgrey;
+    border: 15px solid green;
+
+    padding: 60px;
+    margin: 20px;
+
+    width: 300px;
+
+    /* padrão content-box */
+    /* box-sizing: border-box; */
+}
+
+div.caixa2 {
+    padding: 1px 10px;
+}

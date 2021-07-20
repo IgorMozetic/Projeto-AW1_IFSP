@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <style>
+        /* 1 - especifidade 001 */
+        div {
+            color: black;
+        }
+
+        /* 2 - especifidade 001 */
+        div {
+            /* inspecionar elemento */
+            color: #f00;
+        }
+
+        /* 3 - especifidade 011 */
+        div.pai {
+            color: #0000ff;
+        }
+
+        /* 4 - especifidade 101 */
+        div #pai {
+            color: rgb(128, 0, 128);
+        }
+
+        /* 5 - especifidade 111 */
+        div.pai #pai {
+            color: hsl(120, 100%, 25%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pai" class="pai">
+        <h1>Sou um título</h1>
+    </div>
+    <!-- 5 - especifidade 1000 -->
+    <div id="pai" class="pai" style="color: rgb(0, 255, 42)">
+        <h2>Sou um subtítulo</h2>
+    </div>
+</body>
+
+</html>

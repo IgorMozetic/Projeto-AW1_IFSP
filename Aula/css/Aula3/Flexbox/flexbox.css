@@ -1,0 +1,46 @@
+#content {
+    background: #e9eff9;
+    width: 500px;
+    height: 500px;
+    /*(01) Aplicando o flex no pai */
+    display: flex;
+
+    /*(02) Direção do flex */
+    /*column, column-reverse, row-reverse, row, , deixar row*/
+    /* flex-direction: row;  */
+
+    /*(03)-(.item width=200) Quebra automática items*, deixar wrap*/
+    /*nowrap , wrap-reverse, wrap*/
+    /* flex-wrap: nowrap;  */
+
+    /*(04)-(.item width=100) justificação dos items*, deixar flex-start*/
+    /*flex-end , space-around , space-between , space-evenly , flex-star, center*/
+    justify-content: center; 
+
+    /*(05)-(.content, no flex-wrap: nowrap e voltar; .item no stretch(padrão) tirar height e voltar) 
+    alinhamento vertical dos itens, deixar flex-start*/
+    /*flex-end , flex-star, center, stretch , baseline*/
+    align-items: center; 
+
+    /*(06)-(.item no stretch tirar height e voltar) 
+    alinhamento vertical quando há quebra de conteúdo dos itens, deixar flex-start*/
+    /*flex-end , space-around , space-between , space-evenly , flex-star, center, stretch*/
+    /* align-content: center;  */
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    color: black;
+    box-shadow: 0px 2px 8px -1px rgba(0, 0, 0, 0.24);
+    background: white;
+    margin: 5px;
+}
+
+#item4 {
+    /*(06)- Ordem dos elementos filhos*/
+    order: -1;
+
+    /*(07)- Expande o elemento filho*/
+    /* flex-grow: 1; */
+}

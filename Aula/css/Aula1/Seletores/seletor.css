@@ -1,0 +1,50 @@
+/* Selecionar todos os elementos da página */
+* {
+    margin: 0;
+}
+
+/* Pode ser qualquer tipo de seletor */
+h1, h2, .error {
+    text-align: center;
+    color: red;
+}
+  
+/* Seletor de identificador (ID) */
+#container {
+    width: 9px;
+}
+  
+/* Seletor de classe */
+.error {
+    color: red;
+}
+
+/* Seletor de elemento descendentes*/
+li a { /* Seleciona todos os descendentes */
+    text-decoration: none;
+}
+li > a { /* Seleciona os descendentes diretos (filhos) */
+    text-decoration: none;
+}
+
+/* Seletor de elemento irmãos */
+ul ~ p { /* Seleciona todos os irmãos */
+    color: red;
+}
+ul + p { /* Seleciona só um irmão, o que vem imediatamente após ul */
+    color: red;
+}
+
+/* Seletores de Pseudo-classe */
+a:visited { 
+    color: purple; 
+}
+a:hover { 
+    color: green; 
+}
+
+/* Seletores de Pseudo-elemento */
+p::first-letter {
+    font-weight: bold;
+}
+  

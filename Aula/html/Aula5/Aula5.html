@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input - Aula 5</title>
+    <style>
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h2>Input dados pessoais</h2>
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="idNome" value="Geovanna" name="nome" readonly="readonly"><br>
+        <label for="idTelefone">Telefone:</label>
+        <input type="tel" id="idTelefone" placeholder="(00) 00000-0000"
+            pattern="(\([0-9]{2}))\s([9]{1})?([0-9]{4})-([0-9]{4})" title="Fone precisa ser no formato (99) 9999-9999">
+        <label for="idEmail">Digite seu e-mail:</label>
+        <input type="email" name="email" id="idEmail" minlength="5" autocomplete="off">
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="idSenha" name="senha">
+        <hr>
+
+        <h2>Input radio</h2>
+        <input type="radio" name="genero" id="idFeminino" value="F" style="display: inline;">
+        <label for="F">Feminino</label>
+        <input type="radio" name="genero" id="idMaculino" value="M" style="display: inline;">
+        <label for="M">Masculino</label>
+        <input type="radio" name="genero" id="idOutro" value="O" style="display: inline;">
+        <label for="O">Outro</label>
+        <hr>
+
+        <h2>Input checkbox</h2>
+        <input type="checkbox" id="bike" name="bike" value="Bike">
+        <label for="bike"> Eu tenho uma bike</label><br>
+        <input type="checkbox" id="carro" name="carro" value="Carro">
+        <label for="carro"> Eu tenho um carro</label><br>
+        <input type="checkbox" id="moto" name="moto" value="Moto">
+        <label for="moto"> Eu tenho uma moto</label>
+        <hr>
+
+        <h2>Input Cor</h2>
+        <label for="idCor">Selecione sua cor:</label>
+        <input type="color" name="cor" id="idCor">
+        <hr>
+
+        <h2>Input data e hora</h2>
+        <label for="idFesta">Escolha a data:</label>
+        <input type="date" name="dtFesta" id="idFesta" min="2021-06-15" max="2021-06-30">
+
+        <label for="idMes">Escolha o mês:</label>
+        <input type="month" name="mes" id="idMes">
+
+        <label for="idSemana">Escolha a semana:</label>
+        <input type="week" name="semana" id="idSemana">
+
+        <label for="idHora">Escolha a hora:</label>
+        <input type="time" name="hora" id="idHora">
+
+        <label for="idData">Data para a consulta:</label>
+        <input type="datetime-local" name="dt" id="idData">
+        <hr>
+
+        <h2>Input de Arquivo</h2>
+        <label for="idArq">Selecione o arquivo:</label>
+        <input type="file" name="arq" id="idArq" multiple>
+        <hr>
+
+        <h2>Input para número</h2>
+        <label for="idIdade">Idade:</label>
+        <input type="number" name="idade" id="idIdade" min="1" max="130">
+
+        <label for="idQtd">Quantidade:</label>
+        <input type="number" name="qtd" id="idQtd" min="0" max="130" step="10">
+
+        <label for="idValor">Escolha um valor:</label>
+        0<input type="range" name="valor" id="idValor" min="0" max="10" step="5" style="display: inline;">10
+        <hr>
+
+        <h2>Input de busca</h2>
+        <label for="idPesquisa">Buscar:</label>
+        <input type="search" id="idPesquisa">
+        <hr>
+
+        <h2>Input de URL</h2>
+        <label for="idHomepage">Adicione uma URL:</label>
+        <input type="url" name="homepage" id="idHomepage">
+        <hr>
+
+        <!-- Botão -->
+        <input type="button" onclick="alert('Olá mundo!')" value="Aperte aqui!">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </form>
+</body>
+
+</html>
