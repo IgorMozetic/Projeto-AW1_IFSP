@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#header {
+    top: 0px;
+    background-color: #262626;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+#lista li{
+    display: inline;
+    margin-left: 100px;  
+}
+
+#lista {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: -20px;
+}
+
+#footer {
+    top: 0px;
+    background-color: #262626;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+#lista_rodape li{
+    display: inline;
+    margin-left: 100px;  
+}
+
+#lista_rodape {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: -20px;
+}
