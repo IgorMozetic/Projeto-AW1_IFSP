@@ -3,49 +3,92 @@
     padding: 0;
 } 
 
+body {
+    background: url(imgs/background_campo.jpeg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
-#header {
+#lista {
     top: 0px;
+    list-style: none;
     background-color: #262626;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
-}
-
-#lista li{
-    display: inline;
-    margin-left: 100px;  
+    display: flex;
+    justify-content: space-around;
 }
 
 #lista {
-    text-align: center;
+    /* text-align: center; */
     padding-top: 25px;
     padding-left: -20px;
 }
 
-#footer {
-    top: 0px;
+#title1 {
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    background: #087829;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 3vh;
+    width: 37vw;
+    height: 10vh;
+    font-family: Patua One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: white;
+}
+
+#subtitle {
+    font-family: Patua One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 400;
+    color: black;
+}
+
+.page-logo {
+    width: 100px;
+    position: absolute;
+    top: 13vh;
+    margin-left: 5vw;
+  }
+
+#lista_rodape {
+    list-style: none;
     background-color: #262626;
     width: 100vw;
-    height: 10vh;
+    height: 7vh;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
-}
-
-#lista_rodape li{
-    display: inline;
-    margin-left: 100px;  
+    display: flex;
+    justify-content: space-around;
 }
 
 #lista_rodape {
-    text-align: center;
     padding-top: 25px;
     padding-left: -20px;
+}
+
+.redes_sociais {
+    margin: 0;
+    padding: 0;
 }
