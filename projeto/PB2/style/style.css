@@ -122,14 +122,12 @@ article {
     background-color: #5D8344;
     background-size: cover;
     height: 100vh;
-    /* padding: 3vw 7vw; */
 }
 
 #pag3, #pag5 {
     background-color: #496B69;
     background-size: cover;
     height: 100vh;
-    /* padding: 3vw 7vw 3vw 7vw; */
 }
 
 article.art {
@@ -139,8 +137,6 @@ article.art {
     margin: auto;
     width: 100%;
     height: 75vh;
-    /* margin-left: 7vw;
-    margin-right: 7vw;  */
 }
 
 .title_pags {
@@ -170,7 +166,6 @@ div.meio {
 
 .img_pag_impar {
     width: 36vw;
-    /* height: 32vh; */
 }
 
 .texto_par_par {
@@ -182,7 +177,6 @@ div.meio {
 
 .texto_par_impar {
     width: 36vw;
-    /* height: 32vh; */
     color: white;
     font-size: 1.2vw;
     text-align: justify;
