@@ -4,7 +4,7 @@
 } 
 
 #pag1 {
-    background: url(imgs/background_campo.jpeg);
+    background: url(imgs/background_campo.png); 
     background-size: cover;
     height: 100vh;
 }
@@ -12,6 +12,11 @@
 a.menu {
     text-decoration: none;
     color: white;
+}
+
+.menu:hover {
+    transition: 0.5s;
+    transform: scale(1.04);
 }
 
 #lista {
@@ -51,7 +56,7 @@ a.menu {
 }
 
 #subtitle {
-    margin-top: 3vh;
+    margin-top: 6vh;
     font-family: Patua One;
     font-style: normal;
     font-weight: bold;
@@ -63,11 +68,56 @@ a.menu {
 }
 
 .page-logo {
-    width: 100px;
+    width: 8vw;
     position: absolute;
     top: 13vh;
-    margin-left: 5vw;
-  }
+    margin-left: 6.5vw;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90vw;
+    height: 30vh;
+    margin-top: 7vh;
+}
+
+.inicio {
+    background: #F2F2F2;
+    box-shadow: 0px 3.54814px 3.54814px rgba(0, 0, 0, 0.25);
+    border-radius: 0.6vw;
+    width: 16vw;
+    height: 50vh;
+    padding: 1vw;
+}
+
+.inicio:hover {
+    transition: 0.5s;
+    transform: scale(1.04);
+}
+
+.title_inicio {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.img_menu {
+    width: 14vw;
+    padding: 1vw;
+    margin-top: 1vw;
+}
+
+#pag2 {
+    background-color: #5D8344;
+    background-size: cover;
+    height: 100vh;
+}
 
 #lista_rodape {
     list-style: none;
