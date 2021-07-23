@@ -122,20 +122,70 @@ article {
     background-color: #5D8344;
     background-size: cover;
     height: 100vh;
-    padding: 3vw 7vw;
+    /* padding: 3vw 7vw; */
 }
 
 #pag3, #pag5 {
     background-color: #496B69;
     background-size: cover;
     height: 100vh;
-    padding: 3vw 7vw;
+    /* padding: 3vw 7vw 3vw 7vw; */
+}
+
+article.art {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+    margin: auto;
+    width: 100%;
+    height: 75vh;
+    /* margin-left: 7vw;
+    margin-right: 7vw;  */
 }
 
 .title_pags {
     color: white;
     font-size: 3.5vw;
     text-align: center;
+    align-items: center;
+    height: 15vh;
+    padding-top: 3vw;
+}
+
+div.meio {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    
+}
+
+.img_pag_par {
+    width: 28vw;
+}
+
+.img_pag_meio {
+    width: 28vw;
+
+}
+
+.img_pag_impar {
+    width: 36vw;
+    /* height: 32vh; */
+}
+
+.texto_par_par {
+    width: 28vw;
+    color: white;
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.texto_par_impar {
+    width: 36vw;
+    /* height: 32vh; */
+    color: white;
+    font-size: 1.2vw;
+    text-align: justify;
 }
 
 #lista_rodape {
@@ -146,8 +196,10 @@ article {
     font-family: Roboto;
     font-size: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 25px;
+    padding-left: 7vw;
+    padding-right: 7vw;
 }
 
 .redes_sociais {
