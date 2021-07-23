@@ -9,6 +9,10 @@
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 a.menu {
     text-decoration: none;
     color: white;
@@ -41,12 +45,12 @@ a.menu {
 }
 
 #title {
+    font-family: Open Sans;
     background: #087829;
     border-radius: 10px;
     text-align: center;
     margin-top: 3vh;
     width: 37vw; 
-    font-family: Patua One;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -110,11 +114,17 @@ article {
 .img_menu {
     width: 14vw;
     padding: 1vw;
-    margin-top: 1vw;
+    margin-top: 0.5vw;
 }
 
-#pag2 {
+#pag2, #pag4 {
     background-color: #5D8344;
+    background-size: cover;
+    height: 100vh;
+}
+
+#pag3, #pag5 {
+    background-color: #496B69;
     background-size: cover;
     height: 100vh;
 }
