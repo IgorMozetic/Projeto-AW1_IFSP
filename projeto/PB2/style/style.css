@@ -37,11 +37,12 @@ a.menu {
 }
 
 
-#title1 {
+#cabecalho {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family:Open Sans;
 }
 
 #title {
@@ -121,12 +122,20 @@ article {
     background-color: #5D8344;
     background-size: cover;
     height: 100vh;
+    padding: 3vw 7vw;
 }
 
 #pag3, #pag5 {
     background-color: #496B69;
     background-size: cover;
     height: 100vh;
+    padding: 3vw 7vw;
+}
+
+.title_pags {
+    color: white;
+    font-size: 3.5vw;
+    text-align: center;
 }
 
 #lista_rodape {
