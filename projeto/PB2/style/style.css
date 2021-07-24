@@ -30,7 +30,7 @@ a.menu {
     height: 7vh;
     text-align: center;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 1.5vw;
     display: flex;
     justify-content: space-around;
     padding-top: 25px;
@@ -188,7 +188,7 @@ div.meio {
     height: 7vh;
     text-align: center;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
@@ -199,4 +199,5 @@ div.meio {
 .redes_sociais {
     margin: 0;
     padding: 0;
+    width: 2.5vw;
 }
