@@ -10,72 +10,74 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul id=lista>
-                <li><a href="">Mundial de Clubes</a></li>
-                <li><a href="">Libertadores</a></li>
-                <li><a href="">Champions League</a></li>
-                <li><a href="">Campeonato Brasileiro</a></li>
-                <li><a href="contato.html">Contato</a></li>
+    <section id="conteudo">
+        <header>
+            <nav>
+                <ul id=lista>
+                    <li><a href="index.html#pag2">Mundial de Clubes</a></li>
+                    <li><a href="index.html#pag3">Libertadores</a></li>
+                    <li><a href="index.html#pag4">Champions League</a></li>
+                    <li><a href="index.html#pag5">Campeonato Brasileiro</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="contato">
+            <form>
+                <div class="perguntas">
+                    <div class="titulo">
+                        <label id="title">Contato</label>
+                    </div>
+                    <div class="nomes">
+                        <div class="nome">
+                            <label class="label_input" for="nome">Nome</label>
+                            <input class="nomes_inputs" type="text" id="nome" placeholder="Ex. Igor" />
+                        </div>
+                        <div class="nome">
+                            <label class="label_input for=" sobrenome">Sobrenome</label>
+                            <input class="nomes_inputs" type="text" id="sobrenome" placeholder="Ex. Mozetic" />
+                        </div>
+                    </div>
+                    <div class="dados">
+                        <label class="label_input for=" email">E-mail</label>
+                        <input class="formulario" type="email" id="email" placeholder="Ex. igor@gmail.com" />
+                    </div>
+                    <div class="dados">
+                        <label class="label_input for=" telefone">Telefone</label>
+                        <input class="formulario" type="number" id="telefone" placeholder="Ex. (11) 98745-0368" />
+                    </div>
+                    <div class="dados">
+                        <label class=" label_input for=" assunto">Assunto</label>
+                        <input class="formulario" type="text" id="assunto" placeholder="Ex. Agradecimento" />
+                    </div>
+                    <div class="dados">
+                        <label class="label_input for=" msg">Mensagem</label>
+                        <textarea class="formulario" rows="10" id="msg"></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <ul id=lista_rodape>
+                <li><a href="index.html">Entre em contato</a></li>
+                <li><a href="">© 2021 Igor Mozetic, Inc.</a></li>
+                <li>
+                    <a href="https://github.com/IgorMozetic" target="blank" style="text-decoration: none;">
+                        <img class="redes_sociais" src="imgs/git.png" alt="" width="30">
+                    </a>
+                    <a href="https://codepen.io/igormozetic" target="blank" style="text-decoration: none;">
+                        <img class="redes_sociais" src="imgs/codepen.png" alt="" width="30">
+                    </a>
+                    <a href="https://www.linkedin.com/in/igor-mozetic/" target="blank" style="text-decoration: none;">
+                        <img class="redes_sociais" src="imgs/link.png" alt="" width="30">
+                    </a>
+                    <a href="https://www.instagram.com/igor.mozetic/" target="blank" style="text-decoration: none;">
+                        <img class="redes_sociais" src="imgs/insta.png" alt="" width="30">
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <section id="contato">
-        <form>
-            <div class="perguntas">
-                <div>
-                    <label id="title">Contato</label>
-                </div>
-                <div>
-                    <div class="nome">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" />
-                    </div>
-                    <div class="nome">
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" id="sobrenome" />
-                    </div>
-                </div>
-                <div class="formulario">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" />
-                </div>
-                <div class="formulario">
-                    <label for="email">Telefone</label>
-                    <input type="number" id="telefone" />
-                </div>
-                <div class="formulario">
-                    <label for="assunto">Assunto</label>
-                    <input type="text" id="assunto" />
-                </div>
-                <div class="formulario">
-                    <label for="msg">Mensagem:</label>
-                    <textarea rows="12" id="msg"></textarea>
-                </div>
-            </div>
-        </form>
+        </footer>
     </section>
-    <footer>
-        <ul id=lista_rodape>
-            <li><a href="index.html">Entre em contato</a></li>
-            <li><a href="">© 2021 Igor Mozetic, Inc.</a></li>
-            <li>
-                <a href="https://github.com/IgorMozetic" target="blank" style="text-decoration: none;">
-                    <img class="redes_sociais" src="imgs/git.png" alt="" width="30">
-                </a>
-                <a href="https://codepen.io/igormozetic" target="blank" style="text-decoration: none;">
-                    <img class="redes_sociais" src="imgs/codepen.png" alt="" width="30">
-                </a>
-                <a href="https://www.linkedin.com/in/igor-mozetic/" target="blank" style="text-decoration: none;">
-                    <img class="redes_sociais" src="imgs/link.png" alt="" width="30">
-                </a>
-                <a href="https://www.instagram.com/igor.mozetic/" target="blank" style="text-decoration: none;">
-                    <img class="redes_sociais" src="imgs/insta.png" alt="" width="30">
-                </a>
-            </li>
-        </ul>
-    </footer>
 </body>
 
 </html>
