@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/contato.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <title>Contato</title>
 </head>
 
@@ -44,7 +46,9 @@
                     </div>
                     <div class="dados">
                         <label class="label_input for=" telefone">Telefone</label>
-                        <input class="formulario" type="number" id="telefone" placeholder="Ex. (11) 98745-0368" />
+                        <input class="formulario" type="text" id="telefone" placeholder="Ex. (11) 98745-0368"
+                            minlength="11" maxlength="14" required="required"
+                            onkeypress="$(this).mask('(00) 00000-0000');" />
                     </div>
                     <div class="dados">
                         <label class=" label_input for=" assunto">Assunto</label>
@@ -52,7 +56,7 @@
                     </div>
                     <div class="dados">
                         <label class="label_input for=" msg">Mensagem</label>
-                        <textarea class="formulario" rows="10" id="msg"></textarea>
+                        <textarea class="formulario" rows="7" id="msg"></textarea>
                     </div>
                 </div>
             </form>
