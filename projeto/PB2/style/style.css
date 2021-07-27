@@ -8,6 +8,10 @@ html{
     scroll-behavior: smooth;
   }
 
+body {
+    min-width: 550px;
+}
+
 #pag1 {
     background-image: url(../imgs/background_campo.png); 
     background-size: cover;
@@ -271,7 +275,6 @@ div.meio {
         margin: auto;
         width: 100%;
     }
-    
 
     #lista {
     font-size: 2.2vw;
@@ -289,14 +292,63 @@ div.meio {
 }
 
 @media (max-width: 550px) {
+    #title {
+        width: 50vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5vw;
+        color: white;
+        padding: 2vh ;
+    }
 
-    .inicio {
-        background: #F2F2F2;
-        box-shadow: 0px 3.54814px 3.54814px rgba(0, 0, 0, 0.25);
-        border-radius: 0.6vw;
-        width: 16vw;
-        height: 50vh;
-        padding: 1vw;
+    .page-logo {
+        width: 13vw;
+        position: absolute;
+        top: 13 vh;
+        margin-left: 4vw;
+    }
+
+    #subtitle {
+        margin-top: 6.5vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3vw;
+        width: 80vw;
+        text-align: center;
+    }
+
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 50vw;
+        height: 59vh;
+        margin-top: 6vh;
+        flex-wrap: wrap;
+    }
+
+        .inicio {
+            width: 18vw;
+            padding: 1vw;
+        }
+
+        .title_inicio {
+            font-size: 1.5vw;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .img_menu {
+            width:16vw;
+            padding: 1vw;
+            margin-top: 0.5vw;  
+        }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
     }
 
     #lista {
@@ -313,3 +365,32 @@ div.meio {
         width: 4vw;
     }    
 }
+
+/* @media (max-width: 400px) {
+
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        height: 59vh;
+        margin-top: 6vh;
+        flex-wrap: wrap;
+    }
+
+    .inicio {
+        width: 28vw;
+        padding: 1vw;
+    }
+
+    .title_inicio {
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .img_menu {
+        width:26vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+} */
