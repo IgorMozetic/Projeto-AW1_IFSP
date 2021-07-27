@@ -118,6 +118,12 @@ input.btn {
     float: right;
 }
 
+.btn:hover {
+    transition: 0.4s;
+    /* transform: scale(1.04); */
+    background-color: #035c0c;
+}
+
 #lista {
     top: 0px;
     list-style: none;
@@ -181,17 +187,21 @@ footer {
         width: 100%;
     }
     
+    label#title {
+        font-size: 4vw;
+    }
+
     label.label_input {
-        font-size: 1.6vw;
+        font-size: 2.2vw;
     }
     
     ::placeholder {
         color: #4f4f4f; 
-        font-size: 1.3vw;
+        font-size: 1.6vw;
     }
 
     input, textarea {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     #lista {
@@ -205,6 +215,12 @@ footer {
         margin: 0;
         padding: 0;
         width: 3.5vw;
+    }
+
+    input.btn {
+        width: 13vw;
+        height: 4vh;
+        font-size: 2.2vw;
     }
 }
 
@@ -248,7 +264,4 @@ footer {
         padding: 0;
         width: 4vw;
     }
-
-        
-        
 }

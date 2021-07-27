@@ -26,25 +26,6 @@ a.menu {
     font-family: 'Open Sans', sans-serif;
 }
 
-.menu:hover {
-    transition: 0.5s;
-    transform: scale(1.04);
-}
-
-#lista {
-    top: 0px;
-    list-style: none;
-    background-color: #262626;
-    height: 7vh;
-    text-align: center;
-    font-family: Roboto;
-    font-size: 1.5vw;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1.3vw;
-}
-
-
 #cabecalho {
     display: flex;
     flex-direction: column;
@@ -54,7 +35,7 @@ a.menu {
 }
 
 #title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Patua One', cursive;
     background: #087829;
     border-radius: 10px;
     text-align: center;
@@ -69,13 +50,12 @@ a.menu {
 
 #subtitle {
     margin-top: 6vh;
-    font-family: Patua One;
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.4vw;
     font-weight: 600;
     color: black;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .page-logo {
@@ -85,7 +65,7 @@ a.menu {
     margin-left: 6.5vw;
 }
 
-article {
+article#menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -99,7 +79,6 @@ article {
     box-shadow: 0px 3.54814px 3.54814px rgba(0, 0, 0, 0.25);
     border-radius: 0.6vw;
     width: 16vw;
-    height: 50vh;
     padding: 1vw;
 }
 
@@ -129,6 +108,9 @@ article {
     background-color: #5D8344;
     background-size: cover;
     height: 100vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
 }
 
 #pag3, #pag5 {
@@ -140,10 +122,17 @@ article {
 article.art {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-top: 10vh;
     margin: auto;
     width: 100%;
-    height: 75vh;
+}
+
+section.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
 }
 
 .title_pags {
@@ -151,8 +140,8 @@ article.art {
     font-size: 3.5vw;
     text-align: center;
     align-items: center;
-    height: 15vh;
-    padding-top: 3.1vw;
+    height: 10vh;
+    padding-top: 2.5vw;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -191,6 +180,19 @@ div.meio {
     font-family: 'Open Sans', sans-serif;
 }
 
+#lista {
+    top: 0px;
+    list-style: none;
+    background-color: #262626;
+    height: 7vh;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3.8vh;
+}
+
 #lista_rodape {
     list-style: none;
     background-color: #262626;
@@ -203,11 +205,111 @@ div.meio {
     padding-top: 3.8vh;
     padding-left: 7vw;
     padding-right: 7vw;
-
 }
 
 .redes_sociais {
     margin: 0;
     padding: 0;
     width: 2.5vw;
+}
+
+@media (max-width: 850px) {
+    #title {
+        width: 50vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.5vw;
+        color: white;
+        padding: 2vh ;
+    }
+
+    .page-logo {
+        width: 13vw;
+        position: absolute;
+        top: 13 vh;
+        margin-left: 4vw;
+    }
+
+    #subtitle {
+        margin-top: 6.5vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2vw;
+        width: 70vw;
+        text-align: center;
+    }
+
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 90vw;
+        height: 30vh;
+        margin-top: 7vh;
+    }
+
+        .inicio {
+            width: 18vw;
+            padding: 1vw;
+        }
+
+        .title_inicio {
+            font-size: 1.5vw;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .img_menu {
+            width:16vw;
+            padding: 1vw;
+            margin-top: 0.5vw;  
+        }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
+    }
+    
+
+    #lista {
+    font-size: 2.2vw;
+    }
+
+    #lista_rodape {
+        font-size: 2.2vw;
+    }
+    
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 3.5vw;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .inicio {
+        background: #F2F2F2;
+        box-shadow: 0px 3.54814px 3.54814px rgba(0, 0, 0, 0.25);
+        border-radius: 0.6vw;
+        width: 16vw;
+        height: 50vh;
+        padding: 1vw;
+    }
+
+    #lista {
+    font-size: 2.5vw;
+    }
+
+    #lista_rodape {
+        font-size: 2.3vw;
+    }
+
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 4vw;
+    }    
 }
