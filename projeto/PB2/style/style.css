@@ -41,7 +41,7 @@ a.menu {
     font-size: 1.5vw;
     display: flex;
     justify-content: space-around;
-    padding-top: 25px;
+    padding-top: 1.3vw;
 }
 
 
@@ -62,8 +62,7 @@ a.menu {
     width: 37vw; 
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 1.87vw;
     color: white;
     padding: 2vh ;
 }
@@ -74,7 +73,6 @@ a.menu {
     font-style: normal;
     font-weight: bold;
     font-size: 1.4vw;
-    line-height: 29px;
     font-weight: 600;
     color: black;
     font-family: 'Open Sans', sans-serif;
@@ -111,10 +109,10 @@ article {
 }
 
 .title_inicio {
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 1.4vw;
     text-align: center;
     color: #000000;
     text-decoration: none;
@@ -202,7 +200,7 @@ div.meio {
     font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 3.8vh;
     padding-left: 7vw;
     padding-right: 7vw;
 }
