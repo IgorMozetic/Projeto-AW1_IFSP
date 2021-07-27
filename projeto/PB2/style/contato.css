@@ -163,7 +163,7 @@ footer {
     width: 2.5vw;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
     #contato {
         width: 100%;
         height: 78.5vh;
@@ -263,5 +263,54 @@ footer {
         margin: 0;
         padding: 0;
         width: 4vw;
+    }
+}
+
+@media (max-width: 400px) {
+    #contato {
+        width: 100%;
+        height: 78.5vh;
+    }
+    
+    label#title {
+        font-size: 6vw;
+    }
+    
+    .perguntas {
+        width: 60vw;
+    }
+        
+    label.label_input {
+        font-size: 3.5vw;
+    }
+        
+    ::placeholder {
+        color: #4f4f4f; 
+        font-size: 2.5vw;
+    }
+    
+    input, textarea {
+        font-size: 2.5vw;
+    }
+    
+    #lista {
+        font-size: 2.8vw;
+        flex-wrap: wrap;
+    }
+    
+    #lista_rodape {
+        font-size: 3vw;
+    }
+    
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }
+
+    input.btn {
+        width: 16vw;
+        height: 3vh;
+        font-size: 3.5vw;
     }
 }
