@@ -4,19 +4,22 @@
 }
 body {
     background-color: #5D8344;
+    /* min-width: 550px; */
 }
 a {
     text-decoration: none;
     color: white;
 }
 #conteudo {
-    height: 100%;
+    height: 100vh;
 }
 
 #contato {
     width: 100%;
+    height: 78.5vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 form {
@@ -34,11 +37,10 @@ form {
     background-color: rgba(255, 255, 255, 0.92);
     box-shadow: 0 0.52vw 0.52vw rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    width: 45vw;
+    width: 45vw;    
     display: flex;
     flex-direction: column;
-    margin: 3vw;
-    padding: 2vw;
+    padding: 1.5vw;
 }
 
 label {
@@ -83,7 +85,6 @@ input, textarea {
 input.nomes_inputs {
     width: 19.4vw;
     height: 4vh;
-
 }
 
 input#nome {
@@ -105,6 +106,18 @@ textarea.formulario {
     width: 100%;
 }
 
+input.btn {
+    font-family: 'Montserrat', sans-serif;
+    background: #46D754;
+    border-radius: 5px;
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.7vw;
+    float: right;
+}
+
 #lista {
     top: 0px;
     list-style: none;
@@ -116,6 +129,12 @@ textarea.formulario {
     display: flex;
     justify-content: space-around;
     padding-top: 3.8vh;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 #lista_rodape {
@@ -136,4 +155,100 @@ textarea.formulario {
     margin: 0;
     padding: 0;
     width: 2.5vw;
+}
+
+@media (max-width: 850px) {
+    #contato {
+        width: 100%;
+        height: 78.5vh;
+    }
+
+    .perguntas {
+        width: 50vw;
+    }
+    
+    div.nomes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.nome {
+        margin-top: 1vh;
+    }
+
+    input.nomes_inputs {
+        display: block;
+        width: 100%;
+    }
+    
+    label.label_input {
+        font-size: 1.6vw;
+    }
+    
+    ::placeholder {
+        color: #4f4f4f; 
+        font-size: 1.3vw;
+    }
+
+    input, textarea {
+        font-size: 1.5vw;
+    }
+
+    #lista {
+    font-size: 2.2vw;
+    }
+    #lista_rodape {
+        font-size: 2.2vw;
+    }
+    
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 3.5vw;
+    }
+}
+
+@media (max-width: 550px) {
+    #contato {
+        width: 100%;
+        height: 78.5vh;
+    }
+
+    label#title {
+        font-size: 4vw;
+    }
+
+    .perguntas {
+        width: 50vw;
+    }
+    
+    label.label_input {
+        font-size: 2.3vw;
+    }
+    
+    ::placeholder {
+        color: #4f4f4f; 
+        font-size: 1.6vw;
+    }
+
+    input, textarea {
+        font-size: 1.8vw;
+    }
+
+    #lista {
+    font-size: 2.5vw;
+    }
+
+    #lista_rodape {
+        font-size: 2.3vw;
+    }
+
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 4vw;
+    }
+
+        
+        
 }
