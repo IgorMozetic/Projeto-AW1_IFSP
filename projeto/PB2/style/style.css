@@ -291,28 +291,28 @@ div.meio {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     #title {
-        width: 50vw; 
+        width: 60vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 3.5vw;
+        font-size: 3.8vw;
         color: white;
-        padding: 2vh ;
+        padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 13vw;
+        width: 14vw;
         position: absolute;
-        top: 13 vh;
-        margin-left: 4vw;
+        top: 13vh;
+        margin-left: 2vw;
     }
 
     #subtitle {
-        margin-top: 6.5vh;
+        margin-top: 6vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 2.5vw;
         width: 80vw;
         text-align: center;
     }
@@ -321,13 +321,13 @@ div.meio {
         display: flex;
         justify-content: space-around;
         width: 50vw;
-        height: 59vh;
-        margin-top: 6vh;
+        height: 60vh;
+        margin-top: 4vh;
         flex-wrap: wrap;
     }
 
         .inicio {
-            width: 18vw;
+            width: 16vw;
             padding: 1vw;
         }
 
@@ -338,7 +338,7 @@ div.meio {
         }
 
         .img_menu {
-            width:16vw;
+            width: 14vw;
             padding: 1vw;
             margin-top: 0.5vw;  
         }
@@ -352,45 +352,316 @@ div.meio {
     }
 
     #lista {
-    font-size: 2.5vw;
+    font-size: 2.45vw;
     }
 
     #lista_rodape {
-        font-size: 2.3vw;
+        font-size: 2.6vw;
+    }
+    
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #title {
+        width: 65vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4vw;
+        color: white;
+        padding: 2.3vh ;
+    }
+
+    .page-logo {
+        width: 16vw;
+        position: absolute;
+        top: 13vh;
+        margin-left: 1vw;
+    }
+
+    #subtitle {
+        margin-top: 3vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.6vw;
+        width: 80vw;
+        text-align: center;
+    }
+
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 50vw;
+        height: 65vh;
+        margin-top: 3vh;
+        flex-wrap: wrap;
+    }
+        .inicio {
+            width: 20vw;
+            padding: 1vw;
+        }
+
+        .title_inicio {
+            font-size: 1.9vw;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .img_menu {
+            width: 18vw;
+            padding: 1vw;
+            margin-top: 0.5vw;  
+        }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
+    }
+
+    #lista {
+    font-size: 2.8vw;
+    }
+
+    #lista_rodape {
+        font-size: 3.5vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4vw;
+        width: 5.5vw;
     }    
 }
 
-/* @media (max-width: 400px) {
+@media (max-width: 450px) {
+
+    #title {
+        width: 75vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5vw;
+        color: white;
+        padding: 2.3vh ;
+    }
+
+    .page-logo {
+        width: 18vw;
+        position: absolute;
+        top: 13vh;
+        margin-left: 1vw;
+    }
+
+    #subtitle {
+        margin-top: 5vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.4vw;
+        width: 95vw;
+        text-align: center;
+    }
 
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 50%;
-        height: 59vh;
-        margin-top: 6vh;
+        width: 50vw;
+        height: 64vh;
+        margin-top: 2vh;
         flex-wrap: wrap;
     }
+        .inicio {
+            width: 21vw;
+            padding: 1vw;
+        }
 
-    .inicio {
-        width: 28vw;
-        padding: 1vw;
+        .title_inicio {
+            font-size: 2vw;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .img_menu {
+            width: 19vw;
+            padding: 1vw;
+            margin-top: 0.5vw;  
+        }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
     }
 
-    .title_inicio {
-        font-size: 1.5vw;
-        text-decoration: none;
-        color: #000000;
+    #lista {
+    font-size: 3vw;
     }
 
-    .img_menu {
-        width:26vw;
-        padding: 1vw;
-        margin-top: 0.5vw;  
+    #lista_rodape {
+        font-size: 3.4vw;
     }
-} */
+
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }    
+}
+
+@media (max-width: 400px) {
+
+    #title {
+        width: 85vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6vw;
+        color: white;
+        padding: 2.3vh ;
+    }
+
+    .page-logo {
+        width: 20vw;
+        position: absolute;
+        top: 13vh;
+        margin-left: 1vw;
+    }
+
+    #subtitle {
+        margin-top: 5vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 3.6vw;
+        width: 95vw;
+        text-align: center;
+    }
+
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 60vw;
+        height: 63vh;
+        margin-top: 2vh;
+        flex-wrap: wrap;
+    }
+        .inicio {
+            width: 25vw;
+            padding: 1vw;
+        }
+
+        .title_inicio {
+            font-size: 2.4vw;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .img_menu {
+            width: 23vw;
+            padding: 1vw;
+            margin-top: 0.5vw;  
+        }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
+    }
+
+    #lista {
+    font-size: 3vw;
+    }
+
+    #lista_rodape {
+        font-size: 3.4vw;
+    }
+
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }    
+}
+
+@media (max-width: 360px) {
+
+    #title {
+        width: 85vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6vw;
+        color: white;
+        padding: 2.3vh ;
+    }
+
+    .page-logo {
+        width: 20vw;
+        position: absolute;
+        top: 13vh;
+        margin-left: 4vw;
+    }
+
+    #subtitle {
+        margin-top: 3vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 4vw;
+        width: 100vw;
+        text-align: center;
+    }
+
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        height: 64vh;
+        margin-top: 2vh;
+        flex-wrap: wrap;
+    }
+        .inicio {
+            width: 29vw;
+            padding: 1vw;
+        }
+
+        .title_inicio {
+            font-size: 2.6vw;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .img_menu {
+            width: 27vw;
+            padding: 1vw;
+            margin-top: 0.5vw;  
+        }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
+    }
+
+    #lista {
+    font-size: 3vw;
+    }
+
+    #lista_rodape {
+        font-size: 3.4vw;
+    }
+
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 5vw;
+    }    
+}
