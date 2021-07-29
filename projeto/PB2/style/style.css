@@ -161,7 +161,6 @@ div.meio {
 
 .img_pag_meio {
     width: 28vw;
-
 }
 
 .img_pag_impar {
@@ -171,19 +170,19 @@ div.meio {
 .texto_par_par {
     width: 28vw;
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.8vw;
+    line-height: 1.6vw;
 }
 
 .texto_par_impar {
     width: 36vw;
     color: white;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.8vw;
+    line-height: 1.6vw;
 }
 
 #lista {
