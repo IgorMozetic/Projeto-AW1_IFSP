@@ -171,17 +171,19 @@ div.meio {
 .texto_par_par {
     width: 28vw;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.8vw;
 }
 
 .texto_par_impar {
     width: 36vw;
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.8vw;
 }
 
 #lista {
@@ -268,12 +270,38 @@ div.meio {
             margin-top: 0.5vw;  
         }
 
-    article.art {
+    section.conteudo {
         display: flex;
-        justify-content: space-around;
-        margin-top: 10vh;
-        margin: auto;
-        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 86vh;
+    }
+
+    .texto_par_par {
+        width: 30vw;
+        color: white;
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+    
+    .texto_par_impar {
+        width: 38vw;
+        color: white;
+        font-size: 1.4vw;
+        line-height: 2vw;
+    }
+
+    .img_pag_par {
+        width: 30vw;
+    }
+    
+    .img_pag_meio {
+        width:30vw;
+    
+    }
+    
+    .img_pag_impar {
+        width: 38vw;
     }
 
     #lista {
@@ -317,13 +345,11 @@ div.meio {
         text-align: center;
     }
 
-    article#menu {
+    section.conteudo {
         display: flex;
-        justify-content: space-around;
-        width: 50vw;
-        height: 60vh;
-        margin-top: 4vh;
-        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 86vh;
     }
 
         .inicio {
@@ -349,6 +375,7 @@ div.meio {
         margin-top: 10vh;
         margin: auto;
         width: 100%;
+        /* flex-wrap: wrap; */
     }
 
     #lista {
@@ -397,10 +424,51 @@ div.meio {
         display: flex;
         justify-content: space-around;
         width: 50vw;
-        height: 65vh;
-        margin-top: 3vh;
+        height: 64vh;
+        margin-top: 2vh;
         flex-wrap: wrap;
     }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 86vh;
+    }
+
+    .texto_par_par {
+        width: 30vw;
+        color: white;
+        font-size: 1.5vw;
+    }
+    
+    .texto_par_impar {
+        width: 38vw;
+        color: white;
+        font-size: 1.4vw;
+    }
+
+    .img_pag_par {
+        width: 30vw;
+    }
+    
+    .img_pag_meio {
+        width:30vw;
+        /* visibility: hidden; */
+    }
+    
+    .img_pag_impar {
+        width: 38vw;
+    }
+
         .inicio {
             width: 20vw;
             padding: 1vw;
@@ -417,14 +485,6 @@ div.meio {
             padding: 1vw;
             margin-top: 0.5vw;  
         }
-
-    article.art {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10vh;
-        margin: auto;
-        width: 100%;
-    }
 
     #lista {
     font-size: 2.8vw;
