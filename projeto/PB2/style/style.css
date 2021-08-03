@@ -136,7 +136,7 @@ section.conteudo {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 88vh;
+    height: 87vh;
 }
 
 .title_pags {
@@ -252,6 +252,13 @@ header{
 }
 
 @media (max-width: 850px) {
+    
+    /* header */
+    #lista {
+        font-size: 2.2vw;
+    }
+
+    /* cabeçalho */
     #title {
         width: 50vw; 
         font-style: normal;
@@ -264,7 +271,7 @@ header{
     .page-logo {
         width: 13vw;
         position: absolute;
-        top: 13 vh;
+        top: 13vh;
         margin-left: 4vw;
     }
 
@@ -277,6 +284,7 @@ header{
         text-align: center;
     }
 
+    /* página 1 texto e image */
     article#menu {
         display: flex;
         justify-content: space-around;
@@ -285,61 +293,122 @@ header{
         margin-top: 7vh;
     }
 
-        .inicio {
-            width: 18vw;
-            padding: 1vw;
-        }
+    .inicio {
+        width: 18vw;
+        padding: 1vw;
+    }
 
-        .title_inicio {
-            font-size: 1.5vw;
-            text-decoration: none;
-            color: #000000;
-        }
+    .title_inicio {
+        font-size: 1.5vw;
+        text-decoration: none;
+        color: #000000;
+    }
 
-        .img_menu {
-            width:16vw;
-            padding: 1vw;
-            margin-top: 0.5vw;  
-        }
+    .img_menu {
+        width:16vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
 
-    section.conteudo {
+    /* tamanho das páginas */
+    #pag2, #pag4 {
+        height: 175vh;
+        padding: 2vw 5vw;
+    }
+    
+    #pag3, #pag5 {
+        height: 155vh;
+    }
+
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 86vh;
+        height: 160vh;
     }
 
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
+
+    /* título das páginas */
+    .title_pags {
+        font-size: 5vw;
+    }
+
+    /* margem entre o título e o conteúdo */
+    section#pag2 section.conteudo {
+        margin-top: -1vh;
+    }
+
+    section#pag3 section.conteudo {
+        margin-top: -3vh;
+    }
+
+    section#pag4 section.conteudo {
+        margin-top: -3vh;
+    }
+
+    section#pag5 section.conteudo {
+        margin-top: -1vh;
+    }
+
+    /* conteúdo das páginas */
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+    /* textos do conteúdo */
     .texto_par_par {
-        width: 30vw;
+        width: 60vw;
         color: white;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         line-height: 2vw;
+        margin-top: 1vw;
     }
     
     .texto_par_impar {
-        width: 38vw;
+        width: 60vw;
         color: white;
-        font-size: 1.4vw;
+        font-size: 1.7vw;
         line-height: 2vw;
+        margin-top: 1vw;
     }
 
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* imagens do conteúdo */
     .img_pag_par {
-        width: 30vw;
+        width: 35vw;
+        margin-top: 1vw;
+        align-items: center;
     }
     
     .img_pag_meio {
-        width:30vw;
-    
+        width: 35vw;
+        margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 38vw;
+        width: 45vw;
+        margin-top: 1vw;
     }
 
-    #lista {
-    font-size: 2.2vw;
-    }
-
+    /* footer */
     #lista_rodape {
         font-size: 2.2vw;
     }
