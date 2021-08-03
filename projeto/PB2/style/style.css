@@ -43,7 +43,7 @@ a.menu {
     background: #087829;
     border-radius: 10px;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 15vh;
     width: 37vw; 
     font-style: normal;
     font-weight: normal;
@@ -185,8 +185,13 @@ div.meio {
     line-height: 1.6vw;
 }
 
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 #lista {
-    top: 0px;
     list-style: none;
     background-color: #262626;
     height: 7vh;
@@ -217,6 +222,34 @@ div.meio {
     padding: 0;
     width: 2.5vw;
 }
+
+/* .back-to-top {
+    background: #5D8344;
+    color: #262626;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 0.5rem;
+    clip-path: circle();
+
+    font-size: 1.5rem;
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+    
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 @media (max-width: 850px) {
     #title {
@@ -317,6 +350,7 @@ div.meio {
         width: 3.5vw;
     }
 }
+
 
 @media (max-width: 600px) {
     #title {
