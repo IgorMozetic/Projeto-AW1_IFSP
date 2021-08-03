@@ -16,12 +16,12 @@
 //     { interval: 100 }
 // )
 
-// const backToTopButton = document.querySelector('.back-to-top')
+const backToTopButton = document.querySelector('.back-to-top')
 
-// function backToTop() {
-//     if (window.scrollY >= 560) {
-//         backToTopButton.classList.add('show')
-//     } else {
-//         backToTopButton.classList.remove('show')
-//     }
-// }
+function backToTop() {
+    if (window.scrollY >= 560) {
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
+}
