@@ -312,12 +312,12 @@ header{
 
     /* tamanho das páginas */
     #pag2, #pag4 {
-        height: 175vh;
+        height: 285vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 155vh;
+        height: 225vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -325,6 +325,7 @@ header{
         justify-content: center;
         align-items: center;
         height: 160vh;
+        padding: 5vw;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -332,6 +333,7 @@ header{
         justify-content: center;
         align-items: center;
         height: 140vh;
+        padding: 5vw;
     }
 
     /* título das páginas */
@@ -370,16 +372,16 @@ header{
     .texto_par_par {
         width: 60vw;
         color: white;
-        font-size: 1.7vw;
-        line-height: 2vw;
+        font-size: 2.2vw;
+        line-height: 2.5vw;
         margin-top: 1vw;
     }
     
     .texto_par_impar {
         width: 60vw;
         color: white;
-        font-size: 1.7vw;
-        line-height: 2vw;
+        font-size: 2.2vw;
+        line-height: 2.5vw;
         margin-top: 1vw;
     }
 
@@ -393,18 +395,18 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 35vw;
+        width: 60vw;
         margin-top: 1vw;
         align-items: center;
     }
     
     .img_pag_meio {
-        width: 35vw;
+        width: 60vw;
         margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 45vw;
+        width: 60vw;
         margin-top: 1vw;
     }
 
@@ -422,6 +424,13 @@ header{
 
 
 @media (max-width: 600px) {
+
+    /* header */
+    #lista {
+        font-size: 2.45vw;
+        }
+
+    /* cabeçalho */
     #title {
         width: 60vw; 
         font-style: normal;
@@ -447,43 +456,115 @@ header{
         text-align: center;
     }
 
-    section.conteudo {
+    /* página 1 texto e image */
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        align-items: center;
+        width: 90vw;
+        height: 40vh;
+        margin-top: 7vh;
+    }
+
+    .inicio {
+        width: 19vw;
+        padding: 1vw;
+    }
+
+    .title_inicio {
+        font-size: 1.8vw;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .img_menu {
+        width: 17vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+
+    /* tamanho das páginas */
+    #pag2, #pag4 {
+        height: 205vh;
+        padding: 2vw 5vw;
+    }
+    
+    #pag3, #pag5 {
+        height: 160vh;
+    }
+
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 86vh;
+        height: 160vh;
     }
 
-        .inicio {
-            width: 16vw;
-            padding: 1vw;
-        }
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
 
-        .title_inicio {
-            font-size: 1.5vw;
-            text-decoration: none;
-            color: #000000;
-        }
-
-        .img_menu {
-            width: 14vw;
-            padding: 1vw;
-            margin-top: 0.5vw;  
-        }
+    /* conteúdo das páginas */
+    h2.title_pags {
+        font-size: 5.5vw;
+    }
 
     article.art {
         display: flex;
         justify-content: space-around;
         margin-top: 10vh;
         margin: auto;
-        width: 100%;
-        /* flex-wrap: wrap; */
+        width: 70%;
+        flex-wrap: wrap;
     }
 
-    #lista {
-    font-size: 2.45vw;
+    /* textos do conteúdo */
+    .texto_par_par {
+        width: 60vw;
+        color: white;
+        font-size: 2.2vw;
+        line-height: 2.5vw;
+        margin-top: 1vw;
+    }
+    
+    .texto_par_impar {
+        width: 60vw;
+        color: white;
+        font-size: 2.2vw;
+        line-height: 2.5vw;
+        margin-top: 1vw;
     }
 
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* imagens do conteúdo */
+    .img_pag_par {
+        width: 60vw;
+        margin-top: 1vw;
+        align-items: center;
+    }
+    
+    .img_pag_meio {
+        width: 60vw;
+        margin-top: 1vw;
+    }
+    
+    .img_pag_impar {
+        width: 60vw;
+        margin-top: 1vw;
+    }
+
+    /* footer */
     #lista_rodape {
         font-size: 2.6vw;
     }
@@ -497,6 +578,12 @@ header{
 
 @media (max-width: 500px) {
 
+    /* header */
+    #lista {
+        font-size: 2.8vw;
+    }
+
+    /* cabeçalho */
     #title {
         width: 65vw; 
         font-style: normal;
@@ -522,6 +609,7 @@ header{
         text-align: center;
     }
 
+    /* página 1 texto e image */
     article#menu {
         display: flex;
         justify-content: space-around;
@@ -531,67 +619,99 @@ header{
         flex-wrap: wrap;
     }
 
+    .inicio {
+        width: 20vw;
+        padding: 1vw;
+    }
+
+    .title_inicio {
+        font-size: 1.9vw;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .img_menu {
+        width: 18vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+
+    /* tamanho das páginas */
+    #pag2, #pag4 {
+        height: 205vh;
+        padding: 2vw 5vw;
+    }
+    
+    #pag3, #pag5 {
+        height: 165vh;
+    }
+
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160vh;
+    }
+
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
+
+    /* conteúdo das páginas */
+    h2.title_pags {
+        font-size: 6vw;
+    }
+
     article.art {
         display: flex;
         justify-content: space-around;
         margin-top: 10vh;
         margin: auto;
-        width: 100%;
+        width: 80%;
         flex-wrap: wrap;
     }
-    section.conteudo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 86vh;
-    }
 
+    /* textos do conteúdo */
     .texto_par_par {
-        width: 30vw;
+        width: 70vw;
         color: white;
-        font-size: 1.5vw;
+        font-size: 2.6vw;
+        line-height: 3vw;
     }
     
     .texto_par_impar {
-        width: 38vw;
+        width: 78vw;
         color: white;
-        font-size: 1.4vw;
+        font-size: 2.6vw;
+        line-height: 3vw;
     }
 
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* imagens do conteúdo */
     .img_pag_par {
-        width: 30vw;
+        width: 70vw;
     }
     
     .img_pag_meio {
-        width:30vw;
+        width: 70vw;
         /* visibility: hidden; */
     }
     
     .img_pag_impar {
-        width: 38vw;
+        width: 78vw;
     }
 
-        .inicio {
-            width: 20vw;
-            padding: 1vw;
-        }
-
-        .title_inicio {
-            font-size: 1.9vw;
-            text-decoration: none;
-            color: #000000;
-        }
-
-        .img_menu {
-            width: 18vw;
-            padding: 1vw;
-            margin-top: 0.5vw;  
-        }
-
-    #lista {
-    font-size: 2.8vw;
-    }
-
+    /* footer */
     #lista_rodape {
         font-size: 3.5vw;
     }
@@ -680,6 +800,12 @@ header{
 
 @media (max-width: 400px) {
 
+    /* header */
+    #lista {
+        font-size: 3vw;
+    }
+
+    /* cabeçalho */
     #title {
         width: 85vw; 
         font-style: normal;
@@ -688,14 +814,14 @@ header{
         color: white;
         padding: 2.3vh ;
     }
-
+    
     .page-logo {
         width: 20vw;
         position: absolute;
         top: 13vh;
         margin-left: 1vw;
     }
-
+    
     #subtitle {
         margin-top: 5vh;
         font-style: normal;
@@ -705,6 +831,7 @@ header{
         text-align: center;
     }
 
+    /* página 1 texto e image */
     article#menu {
         display: flex;
         justify-content: space-around;
@@ -713,44 +840,107 @@ header{
         margin-top: 2vh;
         flex-wrap: wrap;
     }
-        .inicio {
-            width: 25vw;
-            padding: 1vw;
-        }
 
-        .title_inicio {
-            font-size: 2.4vw;
-            text-decoration: none;
-            color: #000000;
-        }
+    .inicio {
+        width: 25vw;
+        padding: 1vw;
+    }
 
-        .img_menu {
-            width: 23vw;
-            padding: 1vw;
-            margin-top: 0.5vw;  
-        }
+    .title_inicio {
+        font-size: 2.4vw;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .img_menu {
+        width: 23vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+
+    /* tamanho das páginas */
+    #pag2, #pag4 {
+        height: 225vh;
+        padding: 2vw 5vw;
+    }
+    
+    #pag3, #pag5 {
+        height: 190vh;
+    }
+
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160vh;
+    }
+
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
+
+    /* conteúdo das páginas */
+    h2.title_pags {
+        font-size: 9vw;
+    }
 
     article.art {
         display: flex;
         justify-content: space-around;
         margin-top: 10vh;
         margin: auto;
-        width: 100%;
+        width: 80%;
+        flex-wrap: wrap;
     }
 
-    #lista {
-    font-size: 3vw;
+    /* textos do conteúdo */
+    .texto_par_par {
+        width: 80vw;
+        color: white;
+        font-size: 4vw;
+        line-height: 4.5vw;
+    }
+    
+    .texto_par_impar {
+        width: 88vw;
+        color: white;
+        font-size: 4vw;
+        line-height: 4.5vw;
     }
 
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* imagens do conteúdo */
+    .img_pag_par {
+        width: 80vw;
+    }
+    
+    .img_pag_meio {
+        width: 80vw;
+    }
+    
+    .img_pag_impar {
+        width: 88vw;
+    }
+    
+    /* footer */
     #lista_rodape {
         font-size: 3.4vw;
     }
-
     .redes_sociais {
         margin: 0;
         padding: 0;
         width: 5vw;
-    }    
+    }  
 }
 
 @media (max-width: 360px) {
