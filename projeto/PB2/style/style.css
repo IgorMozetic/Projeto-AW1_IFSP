@@ -5,7 +5,14 @@
 } 
 
 :root {
-    --text-color: var(#fff);
+    --text-color: #fff;
+    --background-title: #087829;
+    --text-color2: #000;
+    --box-menu: #F2F2F2;
+    --box-shadow: rgba(0, 0, 0, 0.25);
+    --background-pag-par: #5D8344;
+    --background-pag-impar: #496B69;
+    --background-rodape-header: #262626;
 }
 
 html{
@@ -30,8 +37,7 @@ a {
 
 a.menu {
     text-decoration: none;
-    /* color: var(--text-color); */
-    color: white;
+    color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -45,7 +51,7 @@ a.menu {
 
 #title {
     font-family: 'Patua One', cursive;
-    background: #087829;
+    background: var(--background-title);
     border-radius: 10px;
     text-align: center;
     margin-top: 15vh;
@@ -53,7 +59,7 @@ a.menu {
     font-style: normal;
     font-weight: normal;
     font-size: 1.87vw;
-    color: white;
+    color: var(--text-color);
     padding: 2vh ;
 }
 
@@ -64,7 +70,7 @@ a.menu {
     font-weight: bold;
     font-size: 1.4vw;
     font-weight: 600;
-    color: black;
+    color: var(--text-color2);
 }
 
 .page-logo {
@@ -84,8 +90,8 @@ article#menu {
 }
 
 .inicio {
-    background: #F2F2F2;
-    box-shadow: 0px 3.54814px 3.54814px rgba(0, 0, 0, 0.25);
+    background: var(--box-menu);
+    box-shadow: 0px 3.54814px 3.54814px var(--box-shadow);
     border-radius: 0.6vw;
     width: 16vw;
     padding: 1vw;
@@ -102,7 +108,7 @@ article#menu {
     font-weight: normal;
     font-size: 1.4vw;
     text-align: center;
-    color: #000000;
+    color: var(--text-color2);
     text-decoration: none;
     
 }
@@ -114,26 +120,30 @@ article#menu {
 }
 
 #pag2, #pag4 {
-    background-color: #5D8344;
+    background-color: var(--background-pag-par);
     background-size: cover;
     height: 100vh;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
 
 #pag3, #pag5 {
-    background-color: #496B69;
+    background-color: var(--background-pag-impar);
     background-size: cover;
     height: 100vh;
+}
+
+.espaco {
+    margin-top: 2vh;
 }
 
 article.art {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10vh;
-    margin: auto;
+    align-self: center;
+    vertical-align: middle;
+    margin-top: -5vh;
     width: 100%;
 }
 
@@ -145,12 +155,12 @@ section.conteudo {
 }
 
 .title_pags {
-    color: white;
+    color: var(--text-color);
     font-size: 3.5vw;
     text-align: center;
     align-items: center;
     height: 10vh;
-    padding-top: 2.5vw;
+    padding-top: 5vw;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -161,11 +171,11 @@ div.meio {
 }
 
 .img_pag_par {
-    width: 28vw;
+    width: 26vw;
 }
 
 .img_pag_meio {
-    width: 28vw;
+    width: 26vw;
 }
 
 .img_pag_impar {
@@ -173,17 +183,24 @@ div.meio {
 }
 
 .texto_par_par {
-    width: 28vw;
-    color: white;
+    width: 29vw;
+    color: var(--text-color);
     font-size: 1.1vw;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6vw;
 }
 
+.texto_imagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 .texto_par_impar {
-    width: 36vw;
-    color: white;
+    width: 37vw;
+    color: var(--text-color);
     font-size: 1.1vw;
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
@@ -198,10 +215,10 @@ header{
 
 #lista {
     list-style: none;
-    background-color: #262626;
+    background-color: var(--background-rodape-header);
     height: 7vh;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     display: flex;
     justify-content: space-around;
@@ -210,10 +227,10 @@ header{
 
 #lista_rodape {
     list-style: none;
-    background-color: #262626;
+    background-color: var(--background-rodape-header);
     height: 7vh;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
@@ -229,8 +246,8 @@ header{
 }
 
 .back-to-top {
-    background: #5D8344;
-    color: #262626;
+    background: var(--background-pag-par);
+    color: var(--background-rodape-header);
     z-index: 100;
     position: fixed;
     right: 1rem;
@@ -269,7 +286,7 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 3.5vw;
-        color: white;
+        color: var(--text-color);
         padding: 2vh ;
     }
 
@@ -306,7 +323,7 @@ header{
     .title_inicio {
         font-size: 1.5vw;
         text-decoration: none;
-        color: #000000;
+        color: var(--text-color2);
     }
 
     .img_menu {
@@ -376,7 +393,7 @@ header{
     /* textos do conteúdo */
     .texto_par_par {
         width: 60vw;
-        color: white;
+        color: var(--text-color);
         font-size: 2.2vw;
         line-height: 2.5vw;
         margin-top: 1vw;
@@ -384,7 +401,7 @@ header{
     
     .texto_par_impar {
         width: 60vw;
-        color: white;
+        color: var(--text-color);
         font-size: 2.2vw;
         line-height: 2.5vw;
         margin-top: 1vw;
@@ -428,7 +445,7 @@ header{
 }
 
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
     /* header */
     #lista {
@@ -441,7 +458,7 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 3.8vw;
-        color: white;
+        color: var(--text-color);
         padding: 2.3vh ;
     }
 
@@ -480,7 +497,7 @@ header{
     .title_inicio {
         font-size: 1.8vw;
         text-decoration: none;
-        color: #000000;
+        color: var(--text-color2);
     }
 
     .img_menu {
@@ -530,7 +547,7 @@ header{
     /* textos do conteúdo */
     .texto_par_par {
         width: 60vw;
-        color: white;
+        color: var(--text-color);
         font-size: 2.2vw;
         line-height: 2.5vw;
         margin-top: 1vw;
@@ -538,7 +555,7 @@ header{
     
     .texto_par_impar {
         width: 60vw;
-        color: white;
+        color: var(--text-color);
         font-size: 2.2vw;
         line-height: 2.5vw;
         margin-top: 1vw;
@@ -579,6 +596,9 @@ header{
         padding: 0;
         width: 4vw;
     }
+    body {
+        min-width: 550px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -594,7 +614,7 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 4vw;
-        color: white;
+        color: var(--text-color);
         padding: 2.3vh ;
     }
 
@@ -632,7 +652,7 @@ header{
     .title_inicio {
         font-size: 1.9vw;
         text-decoration: none;
-        color: #000000;
+        color: var(--text-color2);
     }
 
     .img_menu {
@@ -682,14 +702,14 @@ header{
     /* textos do conteúdo */
     .texto_par_par {
         width: 70vw;
-        color: white;
+        color: var(--text-color);
         font-size: 2.6vw;
         line-height: 3vw;
     }
     
     .texto_par_impar {
         width: 78vw;
-        color: white;
+        color: var(--text-color);
         font-size: 2.6vw;
         line-height: 3vw;
     }
@@ -735,7 +755,7 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 5vw;
-        color: white;
+        color: var(--text-color);
         padding: 2.3vh ;
     }
 
@@ -771,7 +791,7 @@ header{
         .title_inicio {
             font-size: 2vw;
             text-decoration: none;
-            color: #000000;
+            color: var(--text-color2);
         }
 
         .img_menu {
@@ -816,7 +836,7 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 6vw;
-        color: white;
+        color: var(--text-color);
         padding: 2.3vh ;
     }
     
@@ -854,7 +874,7 @@ header{
     .title_inicio {
         font-size: 2.4vw;
         text-decoration: none;
-        color: #000000;
+        color: var(--text-color2);
     }
 
     .img_menu {
@@ -904,14 +924,14 @@ header{
     /* textos do conteúdo */
     .texto_par_par {
         width: 80vw;
-        color: white;
+        color: var(--text-color);
         font-size: 4vw;
         line-height: 4.5vw;
     }
     
     .texto_par_impar {
         width: 88vw;
-        color: white;
+        color: var(--text-color);
         font-size: 4vw;
         line-height: 4.5vw;
     }
@@ -961,7 +981,7 @@ header{
         font-style: normal;
         font-weight: normal;
         font-size: 6vw;
-        color: white;
+        color: var(--text-color);
         padding: 2.3vh ;
     }
 
@@ -999,7 +1019,7 @@ header{
     .title_inicio {
         font-size: 2.6vw;
         text-decoration: none;
-        color: #000000;
+        color: var(--text-color2);
     }
 
     .img_menu {
@@ -1049,7 +1069,7 @@ header{
     /* textos do conteúdo */
     .texto_par_par {
         width: 90vw;
-        color: white;
+        color: var(--text-color);
         font-size: 4vw;
         line-height: 4.5vw;
         margin-top: 1vw;
@@ -1057,7 +1077,7 @@ header{
     
     .texto_par_impar {
         width: 90vw;
-        color: white;
+        color: var(--text-color);
         font-size: 4vw;
         line-height: 4.5vw;
         margin-top: 1vw;

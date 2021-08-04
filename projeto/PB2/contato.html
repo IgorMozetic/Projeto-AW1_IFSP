@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <section id="conteudo">
         <header>
             <nav>
-                <ul id=lista>
+                <ul id=lista1>
                     <li><a href="index.html#pag2">Mundial de Clubes</a></li>
                     <li><a href="index.html#pag3">Libertadores</a></li>
                     <li><a href="index.html#pag4">Champions League</a></li>
@@ -37,29 +37,29 @@
                                 required="required" />
                         </div>
                         <div class="nome">
-                            <label class="label_input for=" sobrenome">Sobrenome</label>
+                            <label class="label_input" for=" sobrenome">Sobrenome</label>
                             <input class="nomes_inputs" type="text" id="sobrenome" placeholder="Ex. Mozetic"
                                 required="required" />
                         </div>
                     </div>
                     <div class="dados">
-                        <label class="label_input for=" email">E-mail</label>
+                        <label class="label_input" for=" email">E-mail</label>
                         <input class="formulario" type="email" id="email" placeholder="Ex. igor@gmail.com"
                             required="required" />
                     </div>
                     <div class="dados">
-                        <label class="label_input for=" telefone">Telefone</label>
+                        <label class="label_input" for=" telefone">Telefone</label>
                         <input class="formulario" type="text" id="telefone" placeholder="Ex. (11) 98745-0368"
                             minlength="11" maxlength="14" required="required"
                             onkeypress="$(this).mask('(00) 00000-0000');" />
                     </div>
                     <div class="dados">
-                        <label class=" label_input for=" assunto">Assunto</label>
+                        <label class=" label_input" for=" assunto">Assunto</label>
                         <input class="formulario" type="text" id="assunto" placeholder="Ex. Agradecimento"
                             required="required" />
                     </div>
                     <div class="dados">
-                        <label class="label_input for=" msg">Mensagem</label>
+                        <label class="label_input" for=" msg">Mensagem</label>
                         <textarea class="formulario" rows="4" id="msg" required="required"></textarea>
                     </div>
                     <div class="botao">
@@ -89,6 +89,9 @@
             </ul>
         </footer>
     </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

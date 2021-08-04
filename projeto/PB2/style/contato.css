@@ -124,13 +124,13 @@ input.btn {
     background-color: #035c0c;
 }
 
-#lista {
+#lista1 {
     top: 0px;
     list-style: none;
     background-color: #262626;
     height: 7vh;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     display: flex;
     justify-content: space-around;
@@ -148,7 +148,7 @@ footer {
     background-color: #262626;
     height: 7vh;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5vw;
     display: flex;
     justify-content: space-between;
