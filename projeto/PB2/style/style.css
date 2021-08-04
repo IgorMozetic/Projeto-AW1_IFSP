@@ -246,8 +246,8 @@ header{
 }
 
 .back-to-top {
-    background: var(--background-pag-par);
-    color: var(--background-rodape-header);
+    background: var(--background-rodape-header);
+    /* color:  */
     z-index: 100;
     position: fixed;
     right: 1rem;
@@ -266,6 +266,10 @@ header{
     transform: translateY(100%);
     
 }
+
+.icon-arrow-up:before {
+    content: "\e90c";
+  }
 
 .back-to-top.show {
     visibility: visible;
