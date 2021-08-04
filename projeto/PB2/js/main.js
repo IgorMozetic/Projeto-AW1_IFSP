@@ -13,7 +13,7 @@ window.addEventListener('scroll', function () {
 const scrollReveal = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 500,
+    duration: 400,
     reset: true
 })
 
@@ -24,6 +24,6 @@ scrollReveal.reveal(
     .redes_sociais, .rodape,
     .label_input, .formulario, .btn, #title, #lista1
     `,
-    { interval: 100 }
+    { interval: 70 }
 )
 
