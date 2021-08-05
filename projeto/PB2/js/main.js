@@ -20,8 +20,7 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
     `#pag1 #title, #pag1 #subtitle, .page-logo, .inicio,
     .title_pags, .texto-imagem, .img_pag_par, .texto_par_par,
-    .img_pag_meio, .img_pag_impar, .texto_par_impar, 
-    .redes_sociais, .rodape,
+    .img_pag_meio, .img_pag_impar, .texto_par_impar,
     .label_input, .formulario, .btn, #title, #lista1
     `,
     { interval: 70 }

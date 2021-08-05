@@ -337,6 +337,7 @@ header{
     }
 
     /* tamanho das páginas */
+
     #pag2, #pag4 {
         height: 285vh;
         padding: 2vw 5vw;
@@ -458,26 +459,26 @@ header{
 
     /* cabeçalho */
     #title {
-        width: 60vw; 
+        width: 70vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 3.8vw;
+        font-size: 5vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 14vw;
+        width: 12vw;
         position: absolute;
-        top: 13vh;
-        margin-left: 2vw;
+        top: 15vh;
+        margin-left: 0.5vw;
     }
 
     #subtitle {
         margin-top: 6vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 2.5vw;
+        font-size: 3vw;
         width: 80vw;
         text-align: center;
     }
@@ -488,36 +489,40 @@ header{
         justify-content: space-around;
         align-self: center;
         align-items: center;
-        width: 90vw;
-        height: 40vh;
-        margin-top: 7vh;
+        width: 80vw;
+        height: 98vh;
+        flex-wrap: wrap;
     }
 
     .inicio {
-        width: 19vw;
+        width: 27vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 1.8vw;
+        font-size: 2.6vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 17vw;
+        width: 25vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
 
     /* tamanho das páginas */
+    #pag1{
+        height: 145vh;
+    }
+
     #pag2, #pag4 {
-        height: 205vh;
+        height: 275vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 160vh;
+        height: 210vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -536,7 +541,7 @@ header{
 
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size: 5.5vw;
+        font-size: 7vw;
     }
 
     article.art {
@@ -550,18 +555,18 @@ header{
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 60vw;
+        width: 80vw;
         color: var(--text-color);
-        font-size: 2.2vw;
-        line-height: 2.5vw;
+        font-size: 3vw;
+        line-height: 3.5vw;
         margin-top: 1vw;
     }
     
     .texto_par_impar {
-        width: 60vw;
+        width: 80vw;
         color: var(--text-color);
-        font-size: 2.2vw;
-        line-height: 2.5vw;
+        font-size: 3vw;
+        line-height: 3.5vw;
         margin-top: 1vw;
     }
 
@@ -575,18 +580,18 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 60vw;
+        width: 80vw;
         margin-top: 1vw;
         align-items: center;
     }
     
     .img_pag_meio {
-        width: 60vw;
+        width: 80vw;
         margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 60vw;
+        width: 80vw;
         margin-top: 1vw;
     }
 
@@ -609,15 +614,15 @@ header{
 
     /* header */
     #lista {
-        font-size: 2.8vw;
+        font-size: 2.85vw;
     }
 
     /* cabeçalho */
     #title {
-        width: 65vw; 
+        width: 70vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 4vw;
+        font-size: 5vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
@@ -633,8 +638,8 @@ header{
         margin-top: 3vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 2.6vw;
-        width: 80vw;
+        font-size: 3.5vw;
+        width: 90vw;
         text-align: center;
     }
 
@@ -642,37 +647,41 @@ header{
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 50vw;
-        height: 64vh;
+        width: 90vw;
+        height: 94vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
 
     .inicio {
-        width: 20vw;
+        width: 31vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 1.9vw;
+        font-size: 3vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 18vw;
+        width: 29vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
 
     /* tamanho das páginas */
+    #pag1{
+        height: 135vh;
+    }
+
     #pag2, #pag4 {
-        height: 205vh;
+        height: 260vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 165vh;
+        height: 215vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -691,7 +700,8 @@ header{
 
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size: 6vw;
+        font-size: 8vw;
+        padding-top: 11vh;
     }
 
     article.art {
@@ -705,17 +715,17 @@ header{
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 70vw;
+        width: 90vw;
         color: var(--text-color);
-        font-size: 2.6vw;
-        line-height: 3vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
     }
     
     .texto_par_impar {
-        width: 78vw;
+        width: 90vw;
         color: var(--text-color);
-        font-size: 2.6vw;
-        line-height: 3vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
     }
 
     /* div para centralizar as imagens */
@@ -728,16 +738,16 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 70vw;
+        width: 90vw;
     }
     
     .img_pag_meio {
-        width: 70vw;
+        width: 90vw;
         /* visibility: hidden; */
     }
     
     .img_pag_impar {
-        width: 78vw;
+        width: 90vw;
     }
 
     /* footer */
@@ -754,55 +764,95 @@ header{
 
 @media (max-width: 450px) {
 
+    /* header */
+    #lista {
+        font-size: 3.2vw;
+    }
+
+    /* cabeçalho */
     #title {
-        width: 75vw; 
+        width: 80vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 5vw;
+        font-size: 5.8vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 18vw;
+        width: 15vw;
         position: absolute;
-        top: 13vh;
-        margin-left: 1vw;
+        top: 15vh;
+        margin-left: 2vw;
     }
 
     #subtitle {
         margin-top: 5vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 3.4vw;
-        width: 95vw;
+        font-size: 3.5vw;
+        width: 90vw;
         text-align: center;
     }
-
+    
+    /* página 1 texto e image */
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 50vw;
-        height: 64vh;
+        width: 80vw;
+        height: 90vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
-        .inicio {
-            width: 21vw;
-            padding: 1vw;
-        }
+    .inicio {
+        width: 33vw;
+        padding: 1vw;
+    }
 
-        .title_inicio {
-            font-size: 2vw;
-            text-decoration: none;
-            color: var(--text-color2);
-        }
+    .title_inicio {
+        font-size: 3.2vw;
+        text-decoration: none;
+        color: var(--text-color2);
+    }
 
-        .img_menu {
-            width: 19vw;
-            padding: 1vw;
-            margin-top: 0.5vw;  
-        }
+    .img_menu {
+        width: 31vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+    
+    /* tamanho das páginas */
+    #pag1{
+        height: 130vh;
+    }
+        
+    #pag2, #pag4 {
+        height: 285vh;
+        padding: 2vw 5vw;
+    }
+        
+    #pag3, #pag5 {
+        height: 238vh;
+    }
+    
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160vh;
+    }
+    
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+    }
+    
+    /* conteúdo das páginas */
+    h2.title_pags {
+        font-size: 9vw;
+    }
 
     article.art {
         display: flex;
@@ -810,12 +860,46 @@ header{
         margin-top: 10vh;
         margin: auto;
         width: 100%;
+        flex-wrap: wrap;
     }
-
-    #lista {
-    font-size: 3vw;
+    
+    /* textos do conteúdo */
+    .texto_par_par {
+        width: 100vw;
+        color: var(--text-color);
+        font-size: 4.5vw;
+        line-height: 5vw;
     }
-
+        
+    .texto_par_impar {
+        width: 100vw;
+        color: var(--text-color);
+        font-size: 4.5vw;
+        line-height: 5vw;
+    }
+    
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    /* imagens do conteúdo */
+    .img_pag_par {
+        width: 100vw;
+    }
+        
+    .img_pag_meio {
+        width: 100vw;
+    }
+        
+    .img_pag_impar {
+        width:100vw;
+    }
+        
+    /* footer */
     #lista_rodape {
         font-size: 3.4vw;
     }
@@ -824,14 +908,14 @@ header{
         margin: 0;
         padding: 0;
         width: 5vw;
-    }    
+    }     
 }
 
 @media (max-width: 400px) {
 
     /* header */
     #lista {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     /* cabeçalho */
@@ -855,8 +939,8 @@ header{
         margin-top: 5vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 3.6vw;
-        width: 95vw;
+        font-size: 4.2vw;
+        width: 105vw;
         text-align: center;
     }
 
@@ -864,37 +948,41 @@ header{
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 60vw;
-        height: 63vh;
+        width: 100vw;
+        height: 90vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
 
     .inicio {
-        width: 25vw;
+        width: 36vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 2.4vw;
+        font-size: 3.5vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 23vw;
+        width: 34vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
 
     /* tamanho das páginas */
+    #pag1{
+        height: 130vh;
+    }
+    
     #pag2, #pag4 {
-        height: 225vh;
+        height: 285vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 190vh;
+        height: 230vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -913,7 +1001,7 @@ header{
 
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size: 9vw;
+        font-size:10vw;
     }
 
     article.art {
@@ -927,17 +1015,17 @@ header{
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 80vw;
+        width: 110vw;
         color: var(--text-color);
-        font-size: 4vw;
-        line-height: 4.5vw;
+        font-size: 5vw;
+        line-height: 5.5vw;
     }
     
     .texto_par_impar {
-        width: 88vw;
+        width: 110vw;
         color: var(--text-color);
-        font-size: 4vw;
-        line-height: 4.5vw;
+        font-size: 5vw;
+        line-height: 5.5vw;
     }
 
     /* div para centralizar as imagens */
@@ -950,25 +1038,25 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 80vw;
+        width: 110vw;
     }
     
     .img_pag_meio {
-        width: 80vw;
+        width: 110vw;
     }
     
     .img_pag_impar {
-        width: 88vw;
+        width:110vw;
     }
     
     /* footer */
     #lista_rodape {
-        font-size: 3.4vw;
+        font-size: 4.3vw;
     }
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 5vw;
+        width: 6vw;
     }  
 }
 
@@ -981,26 +1069,26 @@ header{
 
     /* cabeçalho */
     #title {
-        width: 85vw; 
+        width: 100vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 6vw;
+        font-size: 7vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 20vw;
+        width: 22vw;
         position: absolute;
         top: 13vh;
-        margin-left: 4vw;
+        margin-left: 0.7vw;
     }
 
     #subtitle {
         margin-top: 3vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 4vw;
+        font-size: 5vw;
         width: 100vw;
         text-align: center;
     }
@@ -1009,37 +1097,41 @@ header{
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 80vw;
-        height: 64vh;
+        width: 100vw;
+        height: 85vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
     
     .inicio {
-        width: 29vw;
+        width: 41vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 2.6vw;
+        font-size: 4vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 27vw;
+        width: 39vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
 
     /* tamanho das páginas */
+    #pag1{
+        height: 130vh;
+    }
+
     #pag2, #pag4 {
-        height: 205vh;
+        height: 295vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 170vh;
+        height: 255vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -1058,7 +1150,7 @@ header{
 
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size: 9vw;
+        font-size: 10vw;
     }
 
     article.art {
@@ -1072,18 +1164,18 @@ header{
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 90vw;
+        width: 110vw;
         color: var(--text-color);
-        font-size: 4vw;
-        line-height: 4.5vw;
+        font-size: 6vw;
+        line-height: 6.5vw;
         margin-top: 1vw;
     }
     
     .texto_par_impar {
-        width: 90vw;
+        width: 110vw;
         color: var(--text-color);
-        font-size: 4vw;
-        line-height: 4.5vw;
+        font-size: 6vw;
+        line-height: 6.5vw;
         margin-top: 1vw;
     }
 
@@ -1097,18 +1189,18 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 90vw;
+        width: 110vw;
         margin-top: 1vw;
         align-items: center;
     }
     
     .img_pag_meio {
-        width: 90vw;
+        width: 110vw;
         margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 90vw;
+        width: 110vw;
         margin-top: 1vw;
     }
 
@@ -1121,5 +1213,164 @@ header{
         margin: 0;
         padding: 0;
         width: 7vw;
+    } 
+}
+
+@media (max-width: 330px) {
+    
+    /* header */
+    #lista {
+        font-size: 4.3vw;
+    }
+
+    /* cabeçalho */
+    #title {
+        width: 120vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 8vw;
+        color: var(--text-color);
+        padding: 2.3vh ;
+    }
+
+    .page-logo {
+        width: 20vw;
+        position: absolute;
+        top: 15vh;
+        margin-left: 0vw;
+    }
+
+    #subtitle {
+        margin-top: 5vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6vw;
+        width: 150vw;
+        text-align: center;
+    }
+
+    /* página 1 texto e image */
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 100vw;
+        height: 90vh;
+        margin-top: 1vh;
+        flex-wrap: wrap;
+    }
+    
+    .inicio {
+        width: 45vw;
+        padding: 1vw;
+    }
+
+    .title_inicio {
+        font-size: 4.4vw;
+        text-decoration: none;
+        color: var(--text-color2);
+    }
+
+    .img_menu {
+        width: 43vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+
+    /* tamanho das páginas */
+    #pag1{
+        height: 130vh;
+    }
+
+    #pag2, #pag4 {
+        height: 280vh;
+        padding: 2vw 5vw;
+    }
+    
+    #pag3, #pag5 {
+        height: 251vh;
+    }
+
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 160vh;
+        padding-top: 10vw;
+    }
+
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 140vh;
+        padding-top: 10vw;
+    }
+
+    /* conteúdo das páginas */
+    h2.title_pags {
+        padding-top: 12vh;
+        font-size: 11vw;
+    }
+
+    article.art {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10vh;
+        margin: auto;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    /* textos do conteúdo */
+    .texto_par_par {
+        width: 120vw;
+        color: var(--text-color);
+        font-size: 6vw;
+        line-height: 6.5vw;
+        margin-top: 1vw;
+    }
+    
+    .texto_par_impar {
+        width: 120vw;
+        color: var(--text-color);
+        font-size: 6vw;
+        line-height: 6.5vw;
+        margin-top: 1vw;
+    }
+
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* imagens do conteúdo */
+    .img_pag_par {
+        width: 120vw;
+        margin-top: 1vw;
+        align-items: center;
+    }
+    
+    .img_pag_meio {
+        width: 120vw;
+        margin-top: 1vw;
+    }
+    
+    .img_pag_impar {
+        width: 120vw;
+        margin-top: 1vw;
+    }
+
+    /* footer */
+    #lista_rodape {
+        font-size: 5vw;
+    }
+
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 8vw;
     } 
 }
