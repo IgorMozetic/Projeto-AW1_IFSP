@@ -1374,3 +1374,38 @@ header{
         width: 8vw;
     } 
 }
+
+@media (max-width: 320px) {
+    /* tamanho das páginas */
+    #pag1{
+        height: 150vh;
+    }
+
+    /* página 1 texto e image */
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 150vw;
+        height: 110vh;
+        margin-top: 1vh;
+        flex-wrap: wrap;
+    }
+    
+    .inicio {
+        width: 57vw;
+        padding: 1vw;
+    }
+
+    .title_inicio {
+        font-size: 5.5vw;
+        text-decoration: none;
+        color: var(--text-color2);
+    }
+
+    .img_menu {
+        width: 55vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+
+}
