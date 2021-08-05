@@ -356,7 +356,6 @@ header{
         justify-content: center;
         align-items: center;
         padding-top: 5vh;
-        width: 100%;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -364,7 +363,6 @@ header{
         justify-content: center;
         align-items: center;
         padding-top: 5vh;
-        width: 100%;
     }
 
     /* título das páginas */
@@ -433,8 +431,6 @@ header{
         width: 3.5vw;
     }
 }
-
-
 
 @media (max-width: 850px) {
     
