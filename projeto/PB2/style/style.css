@@ -163,7 +163,8 @@ section.conteudo {
 div.meio {
     display: flex;
     align-items: center;
-    align-self: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .img_pag_par {
@@ -191,6 +192,7 @@ div.meio {
     display: flex;
     align-items: center;
     flex-direction: column;
+
     flex-wrap: wrap;
 }
 
@@ -366,14 +368,16 @@ header{
         font-size: 5vw;
     }
 
-    /* conteúdo das páginas */
-    article.art {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 10vh;
-        margin: auto;
-        width: 100%;
-    }
+        /* conteúdo das páginas */
+        article.art {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            /* margin: auto; */
+            width: 100%;
+            height: 100%;
+        }
 
     /* textos do conteúdo */
     .texto_par_par {
@@ -490,19 +494,19 @@ header{
     /* tamanho das páginas */
 
     #pag2, #pag4 {
-        height: 285vh;
+        height: 300vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 225vh;
+        height: 235vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 265vh;    
+        height: 280vh;    
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -538,11 +542,12 @@ header{
     /* conteúdo das páginas */
     article.art {
         display: flex;
-        justify-content: space-around;
-        margin-top: 10vh;
-        margin: auto;
-        width: 50%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+        /* margin: auto; */
+        width: 100%;
+        height: 100%;
     }
 
     /* textos do conteúdo */
@@ -567,7 +572,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
@@ -677,32 +684,35 @@ header{
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 255vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 190vh;
     }
 
     /* conteúdo das páginas */
     h2.title_pags {
+        padding-top: 10vh;
         font-size: 7vw;
     }
 
+    /* conteúdo das páginas */
     article.art {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
-        width: 90%;
+        margin-top: 2vh;
+        /* margin: auto; */
+        width: 100%;
+        height: 100%;
     }
 
     /* textos do conteúdo */
@@ -727,7 +737,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
@@ -838,14 +850,16 @@ header{
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 240vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 195vh;
     }
@@ -856,15 +870,15 @@ header{
         padding-top: 11vh;
     }
 
+    /* conteúdo das páginas */
     article.art {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
-        width: 90%;
+        margin-top: 2vh;
+        /* margin: auto; */
+        width: 100%;
+        height: 100%;
     }
 
     /* textos do conteúdo */
@@ -887,7 +901,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
@@ -981,26 +997,28 @@ header{
     }
         
     #pag2, #pag4 {
-        height: 285vh;
+        height: 300vh;
         padding: 2vw 5vw;
     }
         
     #pag3, #pag5 {
-        height: 238vh;
+        height: 260vh;
     }
     
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        height: 265vh;
+        height: 275vh;
     }
     
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
-        height: 218vh;
+        height: 235vh;
     }
     
     /* conteúdo das páginas */
@@ -1008,15 +1026,15 @@ header{
         font-size: 9vw;
     }
 
+    /* conteúdo das páginas */
     article.art {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
+        margin-top: 2vh;
+        /* margin: auto; */
         width: 100%;
+        height: 100%;
     }
     
     /* textos do conteúdo */
@@ -1039,7 +1057,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
     
     /* imagens do conteúdo */
@@ -1144,14 +1164,16 @@ header{
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 265vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 225vh;
     }
@@ -1161,15 +1183,15 @@ header{
         font-size:10vw;
     }
 
+    /* conteúdo das páginas */
     article.art {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
-        width: 80%;
+        margin-top: 2vh;
+        /* margin: auto; */
+        width: 100%;
+        height: 100%;
     }
 
     /* textos do conteúdo */
@@ -1192,7 +1214,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
@@ -1295,14 +1319,16 @@ header{
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 275vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         height: 249vh;
     }
@@ -1312,16 +1338,16 @@ header{
         font-size: 10vw;
     }
 
-    article.art {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
-        width: 90%;
-    }
+        /* conteúdo das páginas */
+        article.art {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            /* margin: auto; */
+            width: 100%;
+            height: 100%;
+        }
 
     /* textos do conteúdo */
     .texto_par_par {
@@ -1345,7 +1371,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
@@ -1473,16 +1501,16 @@ header{
         font-size: 11vw;
     }
 
-    article.art {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
-        width: 90%;
-    }
+        /* conteúdo das páginas */
+        article.art {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            /* margin: auto; */
+            width: 100%;
+            height: 100%;
+        }
 
     /* textos do conteúdo */
     .texto_par_par {
@@ -1506,7 +1534,9 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
@@ -1571,15 +1601,15 @@ header{
         margin-top: 0.5vw;  
     }
 
-    article.art {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        align-self: center;
-        margin-top: 10vh;
-        margin: auto;
-        width: 90%;
-    }
+        /* conteúdo das páginas */
+        article.art {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 2vh;
+            /* margin: auto; */
+            width: 100%;
+            height: 100%;
+        }
 
 }
