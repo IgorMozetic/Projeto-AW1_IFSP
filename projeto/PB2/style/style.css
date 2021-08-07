@@ -341,18 +341,19 @@ header{
 
     #pag2, #pag4 {
         padding: 2vw 1vw;
-        height: 123vh;
+        height: 320vh;
     }
     
     #pag3, #pag5 {
         padding: 2vw 1vw;
-        height: 120vh;
+        height: 270vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 290vh;  
         padding-top: 5vh;
     }
 
@@ -360,6 +361,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 250vh;  
         padding-top: 5vh;
     }
 
@@ -368,31 +370,30 @@ header{
         font-size: 5vw;
     }
 
-        /* conteúdo das páginas */
-        article.art {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            margin-top: 2vh;
-            /* margin: auto; */
-            width: 100%;
-            height: 100%;
-        }
+    /* conteúdo das páginas */
+    article.art {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+        width: 100%;
+        height: 100%;
+    }
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 30vw;
+        width: 60vw;
         color: var(--text-color);
-        font-size: 1.5vw;
-        line-height: 2vw;
+        font-size: 2vw;
+        line-height: 2.5vw;
         margin-top: 1vw;
     }
     
     .texto_par_impar {
-        width: 40vw;
+        width: 60vw;
         color: var(--text-color);
-        font-size: 1.5vw;
-        line-height: 2vw;
+        font-size: 2vw;
+        line-height: 2.5vw;
         margin-top: 1vw;
     }
 
@@ -401,22 +402,25 @@ header{
         display: flex;
         align-items: center;
         flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
     }
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 30vw;
+        width: 60vw;
         margin-top: 1vw;
         align-items: center;
     }
     
     .img_pag_meio {
-        width: 30vw;
+        width: 60vw;
         margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 40vw;
+        width: 60vw;
         margin-top: 1vw;
     }
 
@@ -853,12 +857,12 @@ header{
     }
 
     #pag2, #pag4 {
-        height: 275vh;
+        height: 285vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 210vh;
+        height: 250vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -874,7 +878,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 190vh;
+        height: 220vh;
     }
 
     /* conteúdo das páginas */
@@ -948,16 +952,13 @@ header{
         padding: 0;
         width: 4vw;
     }
-    body {
-        min-width: 550px;
-    }
 }
 
 @media (max-width: 500px) {
 
     /* header */
     #lista {
-        font-size: 2.85vw;
+        font-size: 2.5vw;
     }
 
     /* cabeçalho */
@@ -971,10 +972,10 @@ header{
     }
 
     .page-logo {
-        width: 16vw;
+        width: 12vw;
         position: absolute;
-        top: 13vh;
-        margin-left: 1vw;
+        top: 15vh;
+        margin-left: 0.3vw;
     }
 
     #subtitle {
@@ -1019,12 +1020,12 @@ header{
     }
 
     #pag2, #pag4 {
-        height: 260vh;
+        height: 280vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 215vh;
+        height: 235vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -1032,7 +1033,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 240vh;
+        height: 250vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -1040,7 +1041,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 195vh;
+        height: 205vh;
     }
 
     /* conteúdo das páginas */
@@ -1101,13 +1102,13 @@ header{
 
     /* footer */
     #lista_rodape {
-        font-size: 3.5vw;
+        font-size: 2.7vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 5.5vw;
+        width: 4.5vw;
     }    
 }
 
@@ -1115,32 +1116,32 @@ header{
 
     /* header */
     #lista {
-        font-size: 3.2vw;
+        font-size: 2.5vw;
     }
 
     /* cabeçalho */
     #title {
-        width: 80vw; 
+        width: 65vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 5.8vw;
+        font-size: 4.7vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 15vw;
+        width: 13vw;
         position: absolute;
         top: 15vh;
-        margin-left: 2vw;
+        margin-left: 0.8vw;
     }
 
     #subtitle {
         margin-top: 5vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 3.5vw;
-        width: 90vw;
+        font-size: 2.8vw;
+        width: 70vw;
         text-align: center;
     }
     
@@ -1202,7 +1203,7 @@ header{
     
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     /* conteúdo das páginas */
@@ -1218,17 +1219,17 @@ header{
     
     /* textos do conteúdo */
     .texto_par_par {
-        width: 95vw;
+        width: 85vw;
         color: var(--text-color);
-        font-size: 4.5vw;
-        line-height: 5vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
     }
         
     .texto_par_impar {
-        width: 95vw;
+        width: 85vw;
         color: var(--text-color);
-        font-size: 4.5vw;
-        line-height: 5vw;
+        font-size: 3.5vw;
+        line-height: 4vw;
     }
     
     /* div para centralizar as imagens */
@@ -1243,26 +1244,26 @@ header{
     
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 95vw;
+        width: 85vw;
     }
         
     .img_pag_meio {
-        width: 95vw;
+        width: 85vw;
     }
         
     .img_pag_impar {
-        width: 95vw;
+        width: 85vw;
     }
         
     /* footer */
     #lista_rodape {
-        font-size: 3.4vw;
+        font-size: 2.7vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 5vw;
+        width: 4.5vw;
     }     
 }
 
@@ -1270,32 +1271,32 @@ header{
 
     /* header */
     #lista {
-        font-size: 3.5vw;
+        font-size: 2.6vw;
     }
 
     /* cabeçalho */
     #title {
-        width: 85vw; 
+        width: 63vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 6vw;
+        font-size: 4.5vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
     
     .page-logo {
-        width: 20vw;
+        width: 15vw;
         position: absolute;
-        top: 13vh;
-        margin-left: 1vw;
+        top: 15vh;
+        margin-left: 0vw;
     }
     
     #subtitle {
         margin-top: 5vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 4.2vw;
-        width: 105vw;
+        font-size: 3.4vw;
+        width: 85vw;
         text-align: center;
     }
 
@@ -1333,12 +1334,12 @@ header{
     }
     
     #pag2, #pag4 {
-        height: 285vh;
+        height: 290vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 245vh;
+        height: 270vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -1354,12 +1355,12 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 225vh;
+        height: 245vh;
     }
 
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size:10vw;
+        font-size: 8vw;
     }
 
     /* conteúdo das páginas */
@@ -1369,23 +1370,23 @@ header{
         justify-content: space-evenly;
         margin-top: 2vh;
         /* margin: auto; */
-        width: 100%;
+        /* width: 100%; */
         height: 100%;
     }
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 98vw;
+        width: 80vw;
         color: var(--text-color);
-        font-size: 5vw;
-        line-height: 5.5vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
     }
     
     .texto_par_impar {
-        width: 98vw;
+        width: 80vw;
         color: var(--text-color);
-        font-size: 5vw;
-        line-height: 5.5vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
     }
 
     /* div para centralizar as imagens */
@@ -1394,31 +1395,32 @@ header{
         align-items: center;
         flex-direction: column;
         justify-content: space-evenly;
-        width: 100%;
+        /* width: 100%; */
         height: 100%;
     }
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 98vw;
+        width: 80vw;
     }
     
     .img_pag_meio {
-        width: 98vw;
+        width: 80vw;
     }
     
     .img_pag_impar {
-        width: 98vw;
+        width: 80vw;
     }
     
     /* footer */
     #lista_rodape {
-        font-size: 4.3vw;
+        font-size: 3vw;
     }
+
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 6vw;
+        width: 4.7vw;
     }  
 }
 
@@ -1426,32 +1428,32 @@ header{
     
     /* header */
     #lista {
-        font-size: 4vw;
+        font-size: 2.6vw;
     }
 
     /* cabeçalho */
     #title {
-        width: 90vw; 
+        width: 60vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 6.5vw;
+        font-size: 4.2vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 22vw;
+        width: 16vw;
         position: absolute;
-        top: 13vh;
-        margin-left: 3vw;
+        top: 14vh;
+        margin-left: 0.5vw;
     }
 
     #subtitle {
         margin-top: 3vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 3.9vw;
-        width: 98vw;
+        font-size: 3.2vw;
+        width: 80vw;
         text-align: center;
     }
 
@@ -1459,41 +1461,41 @@ header{
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 98vw;
+        width: 95vw;
         height: 85vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
     
     .inicio {
-        width: 41vw;
+        width: 37vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 4vw;
+        font-size: 3.6vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 39vw;
+        width: 35vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
 
     /* tamanho das páginas */
     #pag1{
-        height: 130vh;
+        height: 120vh;
     }
 
     #pag2, #pag4 {
-        height: 295vh;
+        height: 255vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 270vh;
+        height: 240vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -1501,7 +1503,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 275vh;
+        height: 225vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -1509,12 +1511,12 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 249vh;
+        height: 220vh;
     }
 
     /* conteúdo das páginas */
     h2.title_pags {
-        font-size: 10vw;
+        font-size: 8vw;
     }
 
         /* conteúdo das páginas */
@@ -1530,18 +1532,18 @@ header{
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 98vw;
+        width: 85vw;
         color: var(--text-color);
-        font-size: 6vw;
-        line-height: 6.5vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
         margin-top: 1vw;
     }
     
     .texto_par_impar {
-        width: 98vw;
+        width: 85vw;
         color: var(--text-color);
-        font-size: 6vw;
-        line-height: 6.5vw;
+        font-size: 4vw;
+        line-height: 4.5vw;
         margin-top: 1vw;
     }
 
@@ -1557,30 +1559,30 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 98vw;
+        width: 85vw;
         margin-top: 1vw;
         align-items: center;
     }
     
     .img_pag_meio {
-        width: 98vw;
+        width: 85vw;
         margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 98vw;
+        width: 85vw;
         margin-top: 1vw;
     }
 
     /* footer */
     #lista_rodape {
-        font-size: 4.5vw;
+        font-size: 3.2vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 7vw;
+        width: 4.5vw;
     } 
 }
 
@@ -1588,21 +1590,21 @@ header{
     
     /* header */
     #lista {
-        font-size: 4.3vw;
+        font-size: 2.5vw;
     }
 
     /* cabeçalho */
     #title {
-        width: 120vw; 
+        width: 60vw; 
         font-style: normal;
         font-weight: normal;
-        font-size: 8vw;
+        font-size: 4vw;
         color: var(--text-color);
         padding: 2.3vh ;
     }
 
     .page-logo {
-        width: 20vw;
+        width: 15vw;
         position: absolute;
         top: 15vh;
         margin-left: 0vw;
@@ -1612,8 +1614,8 @@ header{
         margin-top: 5vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 6vw;
-        width: 150vw;
+        font-size: 4vw;
+        width: 80vw;
         text-align: center;
     }
 
@@ -1621,25 +1623,25 @@ header{
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 100vw;
+        width: 90vw;
         height: 90vh;
         margin-top: 1vh;
         flex-wrap: wrap;
     }
     
     .inicio {
-        width: 45vw;
+        width: 35vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 4.4vw;
+        font-size: 3.4vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 43vw;
+        width: 33vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
@@ -1677,7 +1679,7 @@ header{
     /* conteúdo das páginas */
     h2.title_pags {
         padding-top: 12vh;
-        font-size: 11vw;
+        font-size: 8vw;
     }
 
         /* conteúdo das páginas */
@@ -1686,25 +1688,24 @@ header{
             flex-direction: column;
             justify-content: space-evenly;
             margin-top: 2vh;
-            /* margin: auto; */
             width: 100%;
             height: 100%;
         }
 
     /* textos do conteúdo */
     .texto_par_par {
-        width: 120vw;
+        width: 90vw;
         color: var(--text-color);
-        font-size: 6vw;
-        line-height: 6.5vw;
+        font-size: 4.5vw;
+        line-height: 5vw;
         margin-top: 1vw;
     }
     
     .texto_par_impar {
-        width: 120vw;
+        width: 90vw;
         color: var(--text-color);
-        font-size: 6vw;
-        line-height: 6.5vw;
+        font-size: 4.5vw;
+        line-height: 5vw;
         margin-top: 1vw;
     }
 
@@ -1720,62 +1721,62 @@ header{
 
     /* imagens do conteúdo */
     .img_pag_par {
-        width: 120vw;
+        width: 90vw;
         margin-top: 1vw;
         align-items: center;
     }
     
     .img_pag_meio {
-        width: 120vw;
+        width: 90vw;
         margin-top: 1vw;
     }
     
     .img_pag_impar {
-        width: 120vw;
+        width: 90vw;
         margin-top: 1vw;
     }
 
     /* footer */
     #lista_rodape {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 8vw;
+        width: 5vw;
     } 
 }
 
 @media (max-width: 320px) {
     /* tamanho das páginas */
     #pag1{
-        height: 150vh;
+        height: 130vh;
     }
 
     /* página 1 texto e image */
     article#menu {
         display: flex;
         justify-content: space-around;
-        width: 150vw;
-        height: 110vh;
+        width: 95vw;
+        height: 90vh;
         margin-top: 1vh;
         flex-wrap: wrap;
     }
     
     .inicio {
-        width: 57vw;
+        width: 43vw;
         padding: 1vw;
     }
 
     .title_inicio {
-        font-size: 5.5vw;
+        font-size: 4.2vw;
         text-decoration: none;
         color: var(--text-color2);
     }
 
     .img_menu {
-        width: 55vw;
+        width: 41vw;
         padding: 1vw;
         margin-top: 0.5vw;  
     }
@@ -1790,5 +1791,4 @@ header{
             width: 100%;
             height: 100%;
         }
-
 }
