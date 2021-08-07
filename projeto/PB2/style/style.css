@@ -606,6 +606,185 @@ header{
     }
 }
 
+@media (max-width: 720px) {
+    
+    /* header */
+    #lista {
+        font-size: 2.3vw;
+    }
+
+    /* cabeçalho */
+    #title {
+        width: 60vw; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 4.2vw;
+        color: var(--text-color);
+        padding: 2vh ;
+    }
+
+    .page-logo {
+        width: 13vw;
+        position: absolute;
+        top: 13vh;
+        margin-left: 2vw;
+    }
+
+    #subtitle {
+        margin-top: 6.5vh;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.5vw;
+        width: 70vw;
+        text-align: center;
+    }
+
+    /* página 1 texto e image */
+    article#menu {
+        display: flex;
+        justify-content: space-around;
+        width: 60vw;
+        height: 100vh;
+        margin-top: 7vh;
+        flex-wrap: wrap;
+    }
+
+    .inicio {
+        width: 22vw;
+        padding: 1vw;
+    }
+
+    .title_inicio {
+        font-size: 2.1vw;
+        text-decoration: none;
+        color: var(--text-color2);
+    }
+
+    .img_menu {
+        width: 20vw;
+        padding: 1vw;
+        margin-top: 0.5vw;  
+    }
+
+    /* tamanho das páginas */
+    #pag1 {
+        height: 145vh;
+    }
+
+    #pag2, #pag4 {
+        height: 300vh;
+        padding: 2vw 5vw;
+    }
+    
+    #pag3, #pag5 {
+        height: 235vh;
+    }
+
+    section#pag2 section.conteudo, section#pag4 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 280vh;    
+    }
+
+    section#pag3 section.conteudo, section#pag5 section.conteudo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 205vh;
+        padding: 5vw;
+    }
+
+    /* título das páginas */
+    .title_pags {
+        font-size: 7vw;
+    }
+
+    /* margem entre o título e o conteúdo */
+    section#pag2 section.conteudo {
+        margin-top: -1vh;
+    }
+
+    section#pag3 section.conteudo {
+        margin-top: -3vh;
+    }
+
+    section#pag4 section.conteudo {
+        margin-top: -3vh;
+    }
+
+    section#pag5 section.conteudo {
+        margin-top: -1vh;
+    }
+
+    /* conteúdo das páginas */
+    article.art {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+        /* margin: auto; */
+        width: 100%;
+        height: 100%;
+    }
+
+    /* textos do conteúdo */
+    .texto_par_par {
+        width: 70vw;
+        color: var(--text-color);
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin-top: 1vw;
+    }
+    
+    .texto_par_impar {
+        width: 70vw;
+        color: var(--text-color);
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin-top: 1vw;
+    }
+
+    /* div para centralizar as imagens */
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* imagens do conteúdo */
+    .img_pag_par {
+        width: 70vw;
+        margin-top: 1vw;
+        align-items: center;
+    }
+    
+    .img_pag_meio {
+        width: 70vw;
+        margin-top: 1vw;
+    }
+    
+    .img_pag_impar {
+        width: 70vw;
+        margin-top: 1vw;
+    }
+
+    /* footer */
+    #lista_rodape {
+        font-size: 2.2vw;
+    }
+    
+    .redes_sociais {
+        margin: 0;
+        padding: 0;
+        width: 3.5vw;
+    }
+}
+
+
 
 @media screen and (max-width: 600px) {
 
