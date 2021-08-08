@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/contato.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
     <link rel="shortcut icon" href="imgs/favicon.ico" />
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
     <title>Contato</title>
 </head>
 
@@ -16,14 +20,21 @@
     <section id="conteudo">
         <header>
             <nav>
-                <ul id=lista1>
-                    <li><a href="index.html#pag2">Mundial de Clubes</a></li>
-                    <li><a href="index.html#pag3">Libertadores</a></li>
-                    <li><a href="index.html#pag4">Champions League</a></li>
-                    <li><a href="index.html#pag5">Campeonato Brasileiro</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+                <div class="menu_nav">
+                    <ul id=lista1>
+                        <li><a class="menu" href="#pag2">Mundial de Clubes</a></li>
+                        <li><a class="menu" href="#pag3">Libertadores</a></li>
+                        <li><a class="menu" href="#pag4">Champions League</a></li>
+                        <li><a class="menu" href="#pag5">Campeonato Brasileiro</a></li>
+                        <li><a class="menu" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
             </nav>
+            <div class="menu_sanduiche">
+                <div class="nome_igu">Conhecimentos Futebolísticos</div>
+                <div class="toggle icon-menu"></div>
+                <div class="toggle icon-close"></div>
+            </div>
         </header>
         <section id="contato">
             <form>

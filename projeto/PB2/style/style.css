@@ -37,6 +37,11 @@ a.menu {
     font-family: 'Open Sans', sans-serif;
 }
 
+div.menu_sanduiche{
+    visibility: hidden;
+    display: none;
+}
+
 #cabecalho {
     display: flex;
     flex-direction: column;
@@ -209,15 +214,15 @@ header{
     width: 100%;
     position: fixed;
     z-index: 100;
+    background-color: var(--background-rodape-header);
 }
 
 #lista {
     list-style: none;
-    background-color: var(--background-rodape-header);
     height: 7vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 2.3vw;
     display: flex;
     justify-content: space-around;
     padding-top: 3.8vh;
@@ -246,7 +251,7 @@ header{
 .back-to-top {
     background: var(--background-rodape-header);
     color: var(--text-color);
-    z-index: 100;
+    z-index: 10;
     position: fixed;
     right: 1rem;
     bottom: 1rem;
@@ -440,7 +445,75 @@ header{
     
     /* header */
     #lista {
-        font-size: 2.2vw;
+        font-size: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    div.menu_sanduiche {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        padding: 3vh 4vw;
+    }
+
+    div.toggle{
+        visibility: visible;
+        color: white;
+    }
+
+    div.nome_igu{
+        font-family: 'Josefin Sans', sans-serif;
+        visibility: visible;
+        color: white;
+        font-size: 2.5vw;
+        padding-top: 0.5vw;
+    }
+
+    div.menu_nav {
+        visibility: hidden;
+        display: none;
+    }
+
+    nav.show .menu_nav{
+        visibility: visible;
+    
+        background-color: var(--background-rodape-header);
+        opacity: 0.95;
+    
+        width: 100%;
+        height: 100%;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    nav.show + div div.icon-close{
+        visibility: visible;
+        opacity: 1;
+        top: 1.5rem;
+    }
+
+    .icon-close {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: -1.5rem;
+        right: 1.5rem;
+        font-size: 4vw;
+        transition: .2s;
+    }
+    
+    .icon-menu {
+        font-size: 3vw;
     }
 
     /* cabeçalho */
@@ -484,7 +557,7 @@ header{
     }
 
     .title_inicio {
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         text-decoration: none;
         color: var(--text-color2);
     }
@@ -614,7 +687,13 @@ header{
     
     /* header */
     #lista {
-        font-size: 2.3vw;
+        font-size: 4.5vw;
+    }
+    .icon-menu {
+        font-size: 4vw;
+    }
+    div.nome_igu{
+        font-size: 3vw;
     }
 
     /* cabeçalho */
@@ -794,8 +873,17 @@ header{
 
     /* header */
     #lista {
-        font-size: 2.45vw;
-        }
+        font-size: 5vw;
+    }
+    .icon-menu {
+        font-size: 4.5vw;
+    }
+    .icon-close{
+        font-size: 5vw;
+    }
+    div.nome_igu{
+        font-size: 3.5vw;
+    }
 
     /* cabeçalho */
     #title {
@@ -958,7 +1046,16 @@ header{
 
     /* header */
     #lista {
-        font-size: 2.5vw;
+        font-size: 5vw;
+    }
+    .icon-menu {
+        font-size: 5vw;
+    }
+    .icon-close{
+        font-size: 5vw;
+    }
+    div.nome_igu{
+        font-size: 4vw;
     }
 
     /* cabeçalho */
@@ -1116,7 +1213,10 @@ header{
 
     /* header */
     #lista {
-        font-size: 2.5vw;
+        font-size: 6vw;
+    }
+    .icon-close{
+        font-size: 6vw;
     }
 
     /* cabeçalho */
@@ -1271,7 +1371,16 @@ header{
 
     /* header */
     #lista {
-        font-size: 2.6vw;
+        font-size: 6.5vw;
+    }
+    .icon-menu {
+        font-size: 5.5vw;
+    }
+    .icon-close{
+        font-size: 6.5vw;
+    }
+    div.nome_igu{
+        font-size: 4.5vw;
     }
 
     /* cabeçalho */
@@ -1428,7 +1537,16 @@ header{
     
     /* header */
     #lista {
-        font-size: 2.6vw;
+        font-size: 7vw;
+    }
+    .icon-menu {
+        font-size: 6vw;
+    }
+    .icon-close{
+        font-size: 7vw;
+    }
+    div.nome_igu{
+        font-size: 5vw;
     }
 
     /* cabeçalho */
@@ -1590,7 +1708,16 @@ header{
     
     /* header */
     #lista {
-        font-size: 2.5vw;
+        font-size: 7.5vw;
+    }
+    .icon-menu {
+        font-size: 6.5vw;
+    }
+    .icon-close{
+        font-size: 7.5vw;
+    }
+    div.nome_igu{
+        font-size: 5.5vw;
     }
 
     /* cabeçalho */

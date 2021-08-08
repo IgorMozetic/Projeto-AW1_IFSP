@@ -2,14 +2,34 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --text-color: #fff;
+    --background-hover-btn: #035c0c;
+    --text-color2: #000;
+    --box-perguntas: rgba(255, 255, 255, 0.92);
+    --box-shadow: rgba(0, 0, 0, 0.25);
+    --background-pag-par: #5D8344;
+    --background-pag-impar: #496B69;
+    --background-rodape-header: #262626;
+    --input: #C4C4C4;
+    --placeholder: #4f4f4f;
+    --btn-perguntas: #46D754; 
+}
+
 body {
-    background-color: #5D8344;
-    /* min-width: 550px; */
+    background-color: var(--background-pag-par);
 }
 a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
 }
+
+div.menu_sanduiche{
+    visibility: hidden;
+    display: none;
+}
+
 #conteudo {
     height: 100vh;
 }
@@ -24,6 +44,11 @@ a {
 
 form {
     align-items: center;
+    height: 100%;
+    margin-top: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .titulo {
@@ -34,8 +59,8 @@ form {
 }
 
 .perguntas {
-    background-color: rgba(255, 255, 255, 0.92);
-    box-shadow: 0 0.52vw 0.52vw rgba(0, 0, 0, 0.25);
+    background-color: var(--box-perguntas);
+    box-shadow: 0 0.52vw 0.52vw var(--box-shadow);
     border-radius: 20px;
     width: 45vw;    
     display: flex;
@@ -73,7 +98,7 @@ label.label_input {
 }
 
 input, textarea {
-    background: #C4C4C4;
+    background: var(--input);
     border-radius: 5px;
     font-size: 1.15vw;
     margin-top: 0.5vh;
@@ -105,7 +130,7 @@ input.formulario {
 }
 
 ::placeholder {
-    color: #4f4f4f; 
+    color: var(--placeholder);
     font-size: 1vw;
 }
 
@@ -115,12 +140,12 @@ textarea.formulario {
 
 input.btn {
     font-family: 'Montserrat', sans-serif;
-    background: #46D754;
+    background: var(--btn-perguntas);
     border-radius: 5px;
     width: 10vw;
     height: 5vh;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--text-color);
     font-size: 1.7vw;
     float: right;
 }
@@ -128,17 +153,22 @@ input.btn {
 .btn:hover {
     transition: 0.4s;
     /* transform: scale(1.04); */
-    background-color: #035c0c;
+    background-color: var(--background-hover-btn);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--background-rodape-header);
 }
 
 #lista1 {
-    top: 0px;
     list-style: none;
-    background-color: #262626;
     height: 7vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 2.3vw;
     display: flex;
     justify-content: space-around;
     padding-top: 3.8vh;
@@ -152,11 +182,11 @@ footer {
 
 #lista_rodape {
     list-style: none;
-    background-color: #262626;
+    background-color: var(--background-rodape-header);
     height: 7vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5vw;
+    font-size: 2.2vw;
     display: flex;
     justify-content: space-between;
     padding-top: 3.8vh;
@@ -167,10 +197,100 @@ footer {
 .redes_sociais {
     margin: 0;
     padding: 0;
-    width: 2.5vw;
+    width: 3.3vw;
+}
+
+@media (max-width: 850px) {
+
+    #lista1{
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    }
+
+    div.menu_sanduiche {
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        padding: 3vh 4vw;
+    }
+
+    div.toggle{
+        visibility: visible;
+        color: var(--text-color);
+    }
+
+    div.nome_igu{
+        font-family: 'Josefin Sans', sans-serif;
+        visibility: visible;
+        color: var(--text-color);
+        font-size: 2.5vw;
+        padding-top: 0.7vw;
+    }
+
+    div.menu_nav {
+        visibility: hidden;
+        display: none;
+    }
+
+    nav.show .menu_nav{
+        visibility: visible;
+    
+        background-color: var(--background-rodape-header);
+        opacity: 0.95;
+    
+        width: 100%;
+        height: 100%;
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    nav.show + div div.icon-close{
+        visibility: visible;
+        opacity: 1;
+        top: 1.5rem;
+    }
+
+    .icon-close {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: -1.5rem;
+        right: 1.5rem;
+        font-size: 4vw;
+        transition: .2s;
+    }
+    
+    .icon-menu {
+        font-size: 3vw;
+    }
 }
 
 @media (max-width: 800px) {
+
+    /* header */
+    #lista1 {
+        font-size: 3.7vw;
+    }
+    .icon-menu {
+        font-size: 3vw;
+    }
+    .icon-close{
+        font-size: 4.5vw;
+    }
+    div.nome_igu{
+        font-size: 2.5vw;
+    }
+
     #contato {
         width: 100%;
         height: 78.5vh;
@@ -203,7 +323,6 @@ footer {
     }
     
     ::placeholder {
-        color: #4f4f4f; 
         font-size: 1.6vw;
     }
 
@@ -211,9 +330,6 @@ footer {
         font-size: 2vw;
     }
 
-    #lista1 {
-    font-size: 2.3vw;
-    }
     #lista_rodape {
         font-size: 2.3vw;
     }
@@ -232,6 +348,21 @@ footer {
 }
 
 @media (max-width: 550px) {
+
+    /* header */
+    #lista1 {
+        font-size: 5vw;
+    }
+    .icon-menu {
+        font-size: 5vw;
+    }
+    .icon-close{
+        font-size: 5vw;
+    }
+    div.nome_igu{
+        font-size: 4vw;
+    }
+
     #contato {
         width: 100%;
         height: 78.5vh;
@@ -250,7 +381,6 @@ footer {
     }
     
     ::placeholder {
-        color: #4f4f4f; 
         font-size: 1.6vw;
     }
 
@@ -258,22 +388,32 @@ footer {
         font-size: 1.8vw;
     }
 
-    #lista1 {
-    font-size: 2.5vw;
-    }
-
     #lista_rodape {
-        font-size: 3vw;
+        font-size: 2.7vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4.5vw;
+        width: 4.3vw;
     }
 }
 
 @media (max-width: 400px) {
+
+    /* header */
+    #lista1 {
+        font-size: 5.5vw;
+    }
+    .icon-menu {
+        font-size: 6vw;
+    }
+    .icon-close{
+        font-size: 6.5vw;
+    }
+    div.nome_igu{
+        font-size: 4.5vw;
+    }
     #contato {
         width: 100%;
         height: 78.5vh;
@@ -292,17 +432,11 @@ footer {
     }
         
     ::placeholder {
-        color: #4f4f4f; 
         font-size: 2.5vw;
     }
     
     input, textarea {
         font-size: 3.5vw;
-    }
-    
-    #lista1 {
-        font-size: 2.6vw;
-        flex-wrap: wrap;
     }
     
     #lista_rodape {
