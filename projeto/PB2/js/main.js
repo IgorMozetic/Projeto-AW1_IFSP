@@ -1,7 +1,7 @@
 const backToTopButton = document.querySelector('.back-to-top')
 
 window.addEventListener('scroll', function () {
-    if (window.scrollY >= 360 && window.scrollY <= 2500) {
+    if (window.scrollY >= 360) {
         // scroll é maior que a altura do header
         backToTopButton.classList.add('show')
     } else {
