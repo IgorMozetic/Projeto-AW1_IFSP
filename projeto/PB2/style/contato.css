@@ -168,7 +168,7 @@ header {
     height: 7vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.3vw;
+    font-size: 2vw;
     display: flex;
     justify-content: space-around;
     padding-top: 3.8vh;
@@ -186,7 +186,7 @@ footer {
     height: 7vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.2vw;
+    font-size: 1.9vw;
     display: flex;
     justify-content: space-between;
     padding-top: 3.8vh;
@@ -197,7 +197,7 @@ footer {
 .redes_sociais {
     margin: 0;
     padding: 0;
-    width: 3.3vw;
+    width: 2.7vw;
 }
 
 @media (max-width: 850px) {
@@ -388,14 +388,24 @@ footer {
         font-size: 1.8vw;
     }
 
-    #lista_rodape {
-        font-size: 2.7vw;
+    form{
+        height: 79vh;
+        margin-top: 18vh;
     }
+
+    #lista_rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 2.5vw;
+        height: 12vh;
+        padding-top: 1vw;
+    }   
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4.3vw;
+        width: 4vw;
     }
 }
 
@@ -440,13 +450,13 @@ footer {
     }
     
     #lista_rodape {
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
     
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 5vw;
+        width: 5.5vw;
     }
 
     input.btn {
