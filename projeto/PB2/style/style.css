@@ -56,10 +56,10 @@ div.menu_sanduiche{
     border-radius: 10px;
     text-align: center;
     margin-top: 15vh;
-    width: 37vw; 
+    width: 45vw; 
     font-style: normal;
     font-weight: normal;
-    font-size: 1.87vw;
+    font-size: 3.2vw;
     color: var(--text-color);
     padding: 2vh ;
 }
@@ -69,7 +69,7 @@ div.menu_sanduiche{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 1.4vw;
+    font-size: 1.7vw;
     font-weight: 600;
     color: var(--text-color2);
 }
@@ -197,7 +197,6 @@ div.meio {
     display: flex;
     align-items: center;
     flex-direction: column;
-
     flex-wrap: wrap;
 }
 
@@ -222,7 +221,7 @@ header{
     height: 7vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 2.3vw;
+    font-size: 2vw;
     display: flex;
     justify-content: space-around;
     padding-top: 3.8vh;
@@ -480,6 +479,7 @@ header{
 
     nav.show .menu_nav{
         visibility: visible;
+        transition: 2s;
     
         background-color: var(--background-rodape-header);
         opacity: 0.95;
@@ -500,6 +500,7 @@ header{
         visibility: visible;
         opacity: 1;
         top: 1.5rem;
+        transition: 1s;
     }
 
     .icon-close {
@@ -509,7 +510,7 @@ header{
         top: -1.5rem;
         right: 1.5rem;
         font-size: 4vw;
-        transition: .2s;
+        transition: .5s;
     }
     
     .icon-menu {
@@ -527,10 +528,10 @@ header{
     }
 
     .page-logo {
-        width: 13vw;
+        width: 10vw;
         position: absolute;
         top: 13vh;
-        margin-left: 4vw;
+        margin-left: 6.5vw;
     }
 
     #subtitle {
@@ -1032,13 +1033,18 @@ header{
 
     /* footer */
     #lista_rodape {
-        font-size: 2.6vw;
-    }
-    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 3vw;
+        height: 18vh;
+        padding-top: 1vw;
+    }   
+
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4vw;
+        width: 5vw;
     }
 }
 
@@ -1065,14 +1071,15 @@ header{
         font-weight: normal;
         font-size: 5vw;
         color: var(--text-color);
-        padding: 2.3vh ;
+        margin-top: 13vh;
+
     }
 
     .page-logo {
         width: 12vw;
         position: absolute;
-        top: 15vh;
-        margin-left: 0.3vw;
+        top: 14vh;
+        margin-left: 0.1vw;
     }
 
     #subtitle {
@@ -1199,13 +1206,14 @@ header{
 
     /* footer */
     #lista_rodape {
-        font-size: 2.7vw;
+        font-size: 3.3vw;
+        padding-top: 1vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4.5vw;
+        width: 5.3vw;
     }    
 }
 
@@ -1232,7 +1240,7 @@ header{
     .page-logo {
         width: 13vw;
         position: absolute;
-        top: 15vh;
+        top: 13vh;
         margin-left: 0.8vw;
     }
 
@@ -1357,14 +1365,15 @@ header{
         
     /* footer */
     #lista_rodape {
-        font-size: 2.7vw;
+        font-size: 3.7vw;
+        padding-top: 1vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4.5vw;
-    }     
+        width: 5.7vw;
+    }       
 }
 
 @media (max-width: 400px) {
@@ -1396,7 +1405,7 @@ header{
     .page-logo {
         width: 15vw;
         position: absolute;
-        top: 15vh;
+        top: 12vh;
         margin-left: 0vw;
     }
     
@@ -1523,14 +1532,15 @@ header{
     
     /* footer */
     #lista_rodape {
-        font-size: 3vw;
+        font-size: 4vw;
+        padding-top: 1vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4.7vw;
-    }  
+        width: 6vw;
+    }     
 }
 
 @media (max-width: 360px) {
@@ -1556,14 +1566,14 @@ header{
         font-weight: normal;
         font-size: 4.2vw;
         color: var(--text-color);
-        padding: 2.3vh ;
+        margin-top: 12vh;
     }
 
     .page-logo {
-        width: 16vw;
+        width: 14vw;
         position: absolute;
-        top: 14vh;
-        margin-left: 0.5vw;
+        top: 12vh;
+        margin-left: 0.7vw;
     }
 
     #subtitle {
@@ -1694,14 +1704,15 @@ header{
 
     /* footer */
     #lista_rodape {
-        font-size: 3.2vw;
+        font-size: 4vw;
+        padding-top: 1vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 4.5vw;
-    } 
+        width: 6vw;
+    }    
 }
 
 @media (max-width: 330px) {
@@ -1733,7 +1744,7 @@ header{
     .page-logo {
         width: 15vw;
         position: absolute;
-        top: 15vh;
+        top: 12vh;
         margin-left: 0vw;
     }
 
@@ -1865,14 +1876,15 @@ header{
 
     /* footer */
     #lista_rodape {
-        font-size: 3vw;
+        font-size: 5vw;
+        padding-top: 1vw;
     }
 
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 5vw;
-    } 
+        width: 8vw;
+    }    
 }
 
 @media (max-width: 320px) {
