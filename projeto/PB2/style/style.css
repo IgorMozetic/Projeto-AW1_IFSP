@@ -340,24 +340,24 @@ header{
 
     /* tamanho das páginas */
     #pag1 {
-        height: 115vh;
+        height: 120vh;
     }
 
     #pag2, #pag4 {
         padding: 2vw 1vw;
-        height: 320vh;
+        height: 460vh;
     }
     
     #pag3, #pag5 {
         padding: 2vw 1vw;
-        height: 270vh;
+        height: 340vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 290vh;  
+        height: 420vh;  
         padding-top: 5vh;
     }
 
@@ -365,7 +365,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 250vh;  
+        height: 300vh;  
         padding-top: 5vh;
     }
 
@@ -430,13 +430,13 @@ header{
 
     /* footer */
     #lista_rodape {
-        font-size: 2.2vw;
+        font-size: 2vw;
     }
     
     .redes_sociais {
         margin: 0;
         padding: 0;
-        width: 3.5vw;
+        width: 2.5vw;
     }
 }
 
@@ -572,26 +572,26 @@ header{
     /* tamanho das páginas */
 
     #pag2, #pag4 {
-        height: 300vh;
+        height: 340vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 235vh;
+        height: 275vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 280vh;    
+        height: 310vh;    
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 205vh;
+        height: 235vh;
         padding: 5vw;
     }
 
@@ -728,7 +728,7 @@ header{
         display: flex;
         justify-content: space-around;
         width: 60vw;
-        height: 100vh;
+        height: 120vh;
         margin-top: 7vh;
         flex-wrap: wrap;
     }
@@ -752,30 +752,30 @@ header{
 
     /* tamanho das páginas */
     #pag1 {
-        height: 145vh;
+        height: 165vh;
     }
 
     #pag2, #pag4 {
-        height: 300vh;
+        height: 335vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 235vh;
+        height: 265vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 280vh;    
+        height: 300vh;    
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 205vh;
+        height: 240vh;
         padding: 5vw;
     }
 
@@ -919,7 +919,7 @@ header{
         align-self: center;
         align-items: center;
         width: 80vw;
-        height: 98vh;
+        height: 115vh;
         flex-wrap: wrap;
     }
 
@@ -942,16 +942,16 @@ header{
 
     /* tamanho das páginas */
     #pag1{
-        height: 145vh;
+        height: 165vh;
     }
 
     #pag2, #pag4 {
-        height: 285vh;
+        height: 340vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 250vh;
+        height: 270vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -959,7 +959,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 255vh;
+        height: 310vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -967,7 +967,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 220vh;
+        height: 240vh;
     }
 
     /* conteúdo das páginas */
@@ -1078,15 +1078,15 @@ header{
     .page-logo {
         width: 12vw;
         position: absolute;
-        top: 14vh;
+        top: 13vh;
         margin-left: 0.1vw;
     }
 
     #subtitle {
-        margin-top: 3vh;
+        margin-top: 4vh;
         font-style: normal;
         font-weight: bold;
-        font-size: 3.5vw;
+        font-size: 3vw;
         width: 90vw;
         text-align: center;
     }
@@ -1096,7 +1096,7 @@ header{
         display: flex;
         justify-content: space-around;
         width: 90vw;
-        height: 94vh;
+        height: 110vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
@@ -1120,16 +1120,16 @@ header{
 
     /* tamanho das páginas */
     #pag1{
-        height: 135vh;
+        height: 150vh;
     }
 
     #pag2, #pag4 {
-        height: 280vh;
+        height: 320vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 235vh;
+        height: 255vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
@@ -1137,7 +1137,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 250vh;
+        height: 290vh;
     }
 
     section#pag3 section.conteudo, section#pag5 section.conteudo {
@@ -1145,7 +1145,7 @@ header{
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 205vh;
+        height: 225vh;
     }
 
     /* conteúdo das páginas */
@@ -1258,7 +1258,7 @@ header{
         display: flex;
         justify-content: space-around;
         width: 80vw;
-        height: 90vh;
+        height: 110vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
@@ -1281,7 +1281,7 @@ header{
     
     /* tamanho das páginas */
     #pag1{
-        height: 130vh;
+        height: 145vh;
     }
         
     #pag2, #pag4 {
@@ -1421,10 +1421,9 @@ header{
     /* página 1 texto e image */
     article#menu {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         width: 95vw;
-        height: 90vh;
+        height: 105vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
@@ -1448,7 +1447,7 @@ header{
 
     /* tamanho das páginas */
     #pag1{
-        height: 130vh;
+        height: 145vh;
     }
     
     #pag2, #pag4 {
@@ -1577,7 +1576,7 @@ header{
     }
 
     #subtitle {
-        margin-top: 3vh;
+        margin-top: 5vh;
         font-style: normal;
         font-weight: bold;
         font-size: 3.2vw;
@@ -1590,7 +1589,7 @@ header{
         display: flex;
         justify-content: space-around;
         width: 95vw;
-        height: 85vh;
+        height: 100vh;
         margin-top: 2vh;
         flex-wrap: wrap;
     }
@@ -1614,7 +1613,7 @@ header{
 
     /* tamanho das páginas */
     #pag1{
-        height: 120vh;
+        height: 135vh;
     }
 
     #pag2, #pag4 {
@@ -1790,19 +1789,19 @@ header{
     }
 
     #pag2, #pag4 {
-        height: 280vh;
+        height: 270vh;
         padding: 2vw 5vw;
     }
     
     #pag3, #pag5 {
-        height: 251vh;
+        height: 230vh;
     }
 
     section#pag2 section.conteudo, section#pag4 section.conteudo {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 260vh;
+        height: 240vh;
         padding-top: 10vw;
     }
 
@@ -1810,7 +1809,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 231vh;
+        height: 200vh;
         padding-top: 10vw;
     }
 
