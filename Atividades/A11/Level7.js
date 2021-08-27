@@ -1,15 +1,10 @@
 function init(robot) {
     console.log("Robot starting")
-    robot.oldCoins = 0;
-    robot.oldEnergy = 100;
 }
 
 function loop(robot) {
-    robot.action = { type: 'move', amount: 40 };
-    if (robot.info().coins > robot.oldCoins ||
-        robot.info().energy > robot.oldEnergy) {
+   robot.action = { type: 'move', amount: 40 };
+   if ((200 <= robot.info().x && robot.info().x <= 300)) {
         robot.action = { type: 'jump', amount: 10 };
     }
-    robot.oldCoins = robot.info().coins;
-    robot.oldEnergy = robot.info().energy;
 }
