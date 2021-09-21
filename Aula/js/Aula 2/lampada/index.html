@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Acenda a lâmpada</h1>
+        <img src="imagens/apagada.jpg" id="luz" onmousemove="mudaLamp(1)" onmouseout="mudaLamp(2)"
+            onclick="mudaLamp(3)" />
+    </div>
+
+    <script>
+        let quebrada = false;
+        function mudaLamp(tipo) {
+            if (tipo == 1 && !quebrada) arquivo = 'imagens/acesa.jpg'
+            if (tipo == 2 && !quebrada) arquivo = 'imagens/apagada.jpg'
+            if (tipo == 3) {
+                quebrada = true
+                arquivo = 'imagens/quebrada.jpg'
+            }
+            // tipo == 1 ? arquivo = 'imagens/acesa.jpg' : 
+            // tipo == 2 ? arquivo = 'imagens/apagada.jpg' : 
+            // tipo == 3 ? arquivo = 'imagens/quebrada.jpg' : 0
+            document.querySelector('#luz').src = arquivo
+        }
+    </script>
+</body>
+<html>
