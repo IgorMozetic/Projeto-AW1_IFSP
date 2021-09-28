@@ -37,36 +37,58 @@
 
     <script>
         let quebrada = false;
-        document.querySelector('#luz').addEventListener('mouseenter', () => mudaLamp(1))
-        document.querySelector('#luz').addEventListener('mouseleave', () => mudaLamp(2))
-        document.querySelector('#luz').addEventListener('click', () => mudaLamp(3))
+
+        document.querySelector('#luz').onmousemove = () => {
+            if (!quebrada) document.querySelector('#luz').src = 'imagens/acesa.jpg'
+        }
+        document.querySelector('#luz').onmouseleave = () => {
+            if (!quebrada) document.querySelector('#luz').src = 'imagens/apagada.jpg'
+        }
+        document.querySelector('#luz').onclick = () => {
+            quebrada = true;
+            document.querySelector('#luz').src = 'imagens/quebrada.jpg'
+        }
+
+
+        // document.querySelector('#luz').onmousemove = () => { mudaLamp(1) }
+        // document.querySelector('#luz').onmouseleave = () => { mudaLamp(2) }
+        // document.querySelector('#luz').onclick = () => { mudaLamp(3) }
+
+
+        // document.querySelector('#luz').addEventListener('mouseenter', () => mudaLamp(1))
+        // document.querySelector('#luz').addEventListener('mouseleave', () => mudaLamp(2))
+        // document.querySelector('#luz').addEventListener('click', () => mudaLamp(3))
+
+
         // document.querySelector('#luz').addEventListener('mouseenter', acende)
         // function acende() {
         //     mudaLamp(1)
         // }
-
         // document.querySelector('#luz').addEventListener('mouseleave', () => apaga)
         // function apaga() {
         //     mudaLamp(2)
         // }
-
         // document.querySelector('#luz').addEventListener('mouseclick', () => quebra)
         // function quebra() {
         //     mudaLamp(3)
         // }
 
-        function mudaLamp(tipo) {
-            if (tipo == 1 && !quebrada) arquivo = 'imagens/acesa.jpg'
-            if (tipo == 2 && !quebrada) arquivo = 'imagens/apagada.jpg'
-            if (tipo == 3) {
-                quebrada = true
-                arquivo = 'imagens/quebrada.jpg'
-            }
-            // tipo == 1 ? arquivo = 'imagens/acesa.jpg' : 
-            // tipo == 2 ? arquivo = 'imagens/apagada.jpg' : 
-            // tipo == 3 ? arquivo = 'imagens/quebrada.jpg' : 0
-            document.querySelector('#luz').src = arquivo
-        }
+        // function mudaLamp(tipo) {
+
+        //     if (tipo == 2 && !quebrada) arquivo = 'imagens/apagada.jpg'
+        //     if (tipo == 3) {
+        //         quebrada = true
+        //         arquivo = 'imagens/quebrada.jpg'
+        //     }
+
+
+        //     tipo == 1 ? arquivo = 'imagens/acesa.jpg' : 
+        //     tipo == 2 ? arquivo = 'imagens/apagada.jpg' : 
+        //     tipo == 3 ? arquivo = 'imagens/quebrada.jpg' : 0
+
+
+        //     document.querySelector('#luz').src = arquivo
+        // }
     </script>
 </body>
 <html>
