@@ -19,3 +19,9 @@ const students = [
 ]
 const student = students.find(student => student.nome === 'João')
 console.log(student)
+
+let redu = num.reduce((previousValue, currentValue) => previousValue + currentValue)
+console.log(redu)
+
+const pares_soma = num.filter(num => num % 2 == 0).reduce((previousValue, currentValue) => previousValue * currentValue)
+console.log(pares_soma)
