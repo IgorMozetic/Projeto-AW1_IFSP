@@ -19,24 +19,20 @@ function countdown() {
     //obter os dias
     const dias = Math.floor(total_segundos / 3600 / 24);
 
-    //obter os horas
-    const horas = Math.floor(total_segundos / 3600) % 24;
+    //obter os horas e colocando como string
+    const horas = String(Math.floor(total_segundos / 3600) % 24);
 
-    //obter os minutos
-    const minutos = Math.floor(total_segundos / 60) % 60;
+    //obter os minutos e colocando como string
+    const minutos = String(Math.floor(total_segundos / 60) % 60);
 
-    //obter os segundos
-    const segundos = Math.floor(total_segundos) % 60;
+    //obter os segundos e colocando como string
+    const segundos = String(Math.floor(total_segundos) % 60);
 
     //exibindo no HTML
     diasElement.innerHTML = dias;
-    horasElement.innerHTML = formatTime(horas);
-    minutosElement.innerHTML = formatTime(minutos);
-    segundosElement.innerHTML = formatTime(segundos);
-}
-
-function formatTime(time) {
-    return time < 10 ? (`0${time}`) : time;
+    horasElement.innerHTML = horas.padStart(2, '0');
+    minutosElement.innerHTML = minutos.padStart(2, '0');
+    segundosElement.innerHTML = segundos.padStart(2, '0');
 }
 
 //primeira chamada
