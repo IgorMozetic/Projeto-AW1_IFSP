@@ -13,6 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #7bdaf3;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 3rem 1.5rem;
     min-height: 100vh;
@@ -31,12 +32,13 @@ body {
     right: 1rem;
 }
 
+/* --- NOTAS --- */
 .notas {
     background-color: #fff;
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
     margin: 20px;
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 300px;
 }
 
 .titulo {
@@ -44,6 +46,7 @@ body {
     font-size: 1.5rem;
     background-color: #9ec862;
     color: white;
+    width: 200px;
 }
 
 .titulo::placeholder {
@@ -57,6 +60,7 @@ body {
     padding: 0.5rem;
 }
 
+/* --- BUTTON --- */
 .notas .ferramentas button {
     background-color: transparent;
     border: none;
@@ -69,16 +73,17 @@ body {
 .notas .main {
     background-color: #eee;
     overflow: hidden;
-    height: 400px;
+    height: 300px;
     width: 100%;
 }
 
+/* --- INPUT --- */
 .notas textarea {
     outline: none;
     font-family: inherit;
     font-size: 1rem;
     border: none;
-    height: 400px;
+    height: 300px;
     width: 100%;
     padding: 1rem;
 }
@@ -98,7 +103,7 @@ body {
     }
     .notas {
         height: 300px;
-        width: 200px;
+        width: 250px;
     }
     .notas .main {
         height: 200px;
