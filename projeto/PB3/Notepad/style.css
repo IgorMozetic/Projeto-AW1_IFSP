@@ -72,9 +72,10 @@ body {
 
 .notas .main {
     background-color: #eee;
-    overflow: hidden;
-    height: 300px;
+    word-break: break-all;
+    height: 356px;
     width: 100%;
+    padding: 1rem;
 }
 
 /* --- INPUT --- */
@@ -83,7 +84,7 @@ body {
     font-family: inherit;
     font-size: 1rem;
     border: none;
-    height: 300px;
+    height: 350px;
     width: 100%;
     padding: 1rem;
 }
@@ -106,9 +107,9 @@ body {
         width: 250px;
     }
     .notas .main {
-        height: 200px;
+        height: 258px;
     }
     .notas textarea {
-        height: 200px;    
+        height: 250px;    
     }
 }
