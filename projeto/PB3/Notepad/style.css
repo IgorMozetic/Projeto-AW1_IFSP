@@ -49,6 +49,12 @@ body {
     width: 200px;
 }
 
+.titulo:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
 .titulo::placeholder {
     color: white;
 }
