@@ -10,17 +10,21 @@ const url = (cidade) =>
 async function getClimaPorLocalização(cidade) {
     const resp = await fetch(url(cidade), { origin: "cors" });
     const respData = await resp.json();
+    if (respData.cod == 404) {
+        main.innerHTML = `<p class="erro">Erro, a cidade digitada é inválida! Digite uma cidade válida<p>`;
+    }
     addWeatherToPage(respData);
 }
 
 function addWeatherToPage(data) {
+
     const temp = KtoC(data.main.temp);
 
     const weather = document.createElement("div");
     weather.classList.add("weather");
 
     weather.innerHTML = `
-        <p>O clima em: <i>${pesquisa.value}</i></p>
+        <p>O clima em <i>${pesquisa.value}</i> é:</p>
         <h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" /> ${temp}°C </h2>
         <small>${data.weather[0].main}</small>
     `;
