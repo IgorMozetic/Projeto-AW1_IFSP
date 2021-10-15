@@ -72,17 +72,13 @@ a {
     color: white;
 }
 
-li{
-    margin: 0 8rem;
-}
-
 #lista_rodape {
     list-style: none;
     background-color: #262626;
     height: 4rem;
     font-size: 1.3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     line-height: 1rem;
 }
@@ -99,7 +95,7 @@ li{
         padding: 30px 10px;
     } 
     input {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         width: 200px;
     }
     .weather {
@@ -110,5 +106,12 @@ li{
     .weather > h2 > img {
         width: 50px;
         height: 50px;
+    }
+        
+    #lista_rodape {
+        height: 8rem;
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
