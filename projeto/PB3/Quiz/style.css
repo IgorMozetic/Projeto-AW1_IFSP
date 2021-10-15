@@ -100,6 +100,10 @@ a {
     line-height: 1rem;
 }
 
+#lista_rodape li {
+    margin: 0;
+}
+
 .redes_sociais {
     width: 2rem;
     height: 2rem;
@@ -130,5 +134,8 @@ a {
         font-size: 1rem;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    #lista_rodape li {
+        font-size: 1rem;
     }
 }
