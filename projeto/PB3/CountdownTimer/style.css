@@ -10,7 +10,7 @@
 
 /* --- BODY --- */
 body {
-    background: url("back_countdown.jpg");
+    background: url("../imgs/back_countdown.jpgl");
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: color;
     background-size: cover;
