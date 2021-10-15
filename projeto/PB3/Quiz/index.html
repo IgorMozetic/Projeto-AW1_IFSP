@@ -11,36 +11,60 @@
 
 <body>
     <!-- CONTENT -->
-    <div class="quiz-container" id="quiz">
-
-        <div class="quiz-header">
-            <h2 id="questao">Texto da Questão</h2>
-            <!-- OPTIONS -->
-            <ul>
-                <!-- OPTION -->
-                <li>
-                    <input type="radio" id="a" name="resposta" class="resposta">
-                    <label for="a" id="a_texto">Questão</label>
-                </li>
-                <!-- OPTION -->
-                <li>
-                    <input type="radio" id="b" name="resposta" class="resposta">
-                    <label for="b" id="b_texto">Questão</label>
-                </li>
-                <!-- OPTION -->
-                <li>
-                    <input type="radio" id="c" name="resposta" class="resposta">
-                    <label for="c" id="c_texto">Questão</label>
-                </li>
-                <!-- OPTION -->
-                <li>
-                    <input type="radio" id="d" name="resposta" class="resposta">
-                    <label for="d" id="d_texto">Questão</label>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="questao">Texto da Questão</h2>
+                <!-- OPTIONS -->
+                <ul>
+                    <!-- OPTION -->
+                    <li>
+                        <input type="radio" id="a" name="resposta" class="resposta">
+                        <label for="a" id="a_texto">Questão</label>
+                    </li>
+                    <!-- OPTION -->
+                    <li>
+                        <input type="radio" id="b" name="resposta" class="resposta">
+                        <label for="b" id="b_texto">Questão</label>
+                    </li>
+                    <!-- OPTION -->
+                    <li>
+                        <input type="radio" id="c" name="resposta" class="resposta">
+                        <label for="c" id="c_texto">Questão</label>
+                    </li>
+                    <!-- OPTION -->
+                    <li>
+                        <input type="radio" id="d" name="resposta" class="resposta">
+                        <label for="d" id="d_texto">Questão</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="enviar">Enviar</button>
         </div>
-        <button id="enviar">Enviar</button>
     </div>
+    <!-- FOOTER -->
+    <footer>
+        <ul id=lista_rodape>
+            <!-- NAVEGAÇÃO -->
+            <li><a class="menu rodape" href="../Central/index.html">Voltar para home</a></li>
+            <li><a class="menu rodape" href="">© 2021 Igor Mozetic, Inc.</a></li>
+            <!-- REDES SOCIAIS -->
+            <li>
+                <a href="https://github.com/IgorMozetic" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/git.png" alt="" width="30">
+                </a>
+                <a href="https://codepen.io/igormozetic" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/codepen.png" alt="" width="30">
+                </a>
+                <a href="https://www.linkedin.com/in/igor-mozetic/" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/link.png" alt="" width="30">
+                </a>
+                <a href="https://www.instagram.com/igor.mozetic/" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/insta.png" alt="" width="30">
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 
