@@ -12,13 +12,16 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #7bdaf3;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 3rem 1.5rem;
     min-height: 100vh;
 }
 
+#notepad {
+    padding: 3rem 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
 
 .add {
     background-color: #9ec862;
@@ -97,6 +100,28 @@ body {
 
 .notas .hidden {
     display: none;
+}
+
+/* --- FOOTER --- */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#lista_rodape {
+    list-style: none;
+    background-color: #262626;
+    height: 4rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.redes_sociais {
+    width: 2rem;
+    height: 2rem;
 }
 
 /* --- RESPONSIVE --- */

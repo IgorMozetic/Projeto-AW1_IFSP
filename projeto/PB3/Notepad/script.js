@@ -1,6 +1,6 @@
-// coleta o seletor do botão de adicionar
+// coleta o seletor dos elementos
 const addBtn = document.querySelector('#add')
-
+const notepad = document.querySelector('#notepad')
 // pega os itens que estão no LocalStorade
 const notas = JSON.parse(localStorage.getItem("notas"));
 
@@ -71,7 +71,7 @@ function addNovaNota(texto = "") {
         updateLS();
     });
 
-    document.body.appendChild(nota);
+    notepad.appendChild(nota);
 }
 
 // Função de atualizar
