@@ -11,22 +11,48 @@
 </head>
 
 <body>
+    <!-- CONTENT -->
     <section>
-        <h1 class="game--title">Tic Tac Toe</h1>
-        <div class="game--container">
-            <div data-cell-index="0" class="cell"></div>
-            <div data-cell-index="1" class="cell"></div>
-            <div data-cell-index="2" class="cell"></div>
-            <div data-cell-index="3" class="cell"></div>
-            <div data-cell-index="4" class="cell"></div>
-            <div data-cell-index="5" class="cell"></div>
-            <div data-cell-index="6" class="cell"></div>
-            <div data-cell-index="7" class="cell"></div>
-            <div data-cell-index="8" class="cell"></div>
+        <!-- TITLE -->
+        <h1 class="titulo">Tic Tac Toe</h1>
+        <!-- TICTACTOE -->
+        <div class="container">
+            <div data-cell-index="0" class="celula"></div>
+            <div data-cell-index="1" class="celula"></div>
+            <div data-cell-index="2" class="celula"></div>
+            <div data-cell-index="3" class="celula"></div>
+            <div data-cell-index="4" class="celula"></div>
+            <div data-cell-index="5" class="celula"></div>
+            <div data-cell-index="6" class="celula"></div>
+            <div data-cell-index="7" class="celula"></div>
+            <div data-cell-index="8" class="celula"></div>
         </div>
-        <h2 class="game--status"></h2>
-        <button class="game--restart">Restart Game</button>
+        <h2 class="status"></h2>
+        <button class="restart">Restart Game</button>
     </section>
+    <!-- FOOTER -->
+    <footer>
+        <ul id=lista_rodape>
+            <!-- NAVEGAÇÃO -->
+            <li><a class="menu rodape" href="../Central/index.html">Voltar para home</a></li>
+            <li><a class="menu rodape" href="">© 2021 Igor Mozetic, Inc.</a></li>
+            <!-- REDES SOCIAIS -->
+            <li>
+                <a href="https://github.com/IgorMozetic" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/git.png" alt="" width="30">
+                </a>
+                <a href="https://codepen.io/igormozetic" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/codepen.png" alt="" width="30">
+                </a>
+                <a href="https://www.linkedin.com/in/igor-mozetic/" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/link.png" alt="" width="30">
+                </a>
+                <a href="https://www.instagram.com/igor.mozetic/" target="blank" style="text-decoration: none;">
+                    <img class="redes_sociais" src="../imgs/insta.png" alt="" width="30">
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="script.js"></script>
 </body>
