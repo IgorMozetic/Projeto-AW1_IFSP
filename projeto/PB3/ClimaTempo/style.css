@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
 }
 
+/* --- CONTAINER --- */
 .container {
     display: flex;
     flex-direction: column;
@@ -31,6 +32,7 @@ body {
     text-align: center;
 }
 
+/* --- INPUT --- */
 input {
     background-color: #fff;
     border: none;
@@ -47,6 +49,7 @@ input:focus {
     outline: none;
 }
 
+/* --- CLIMA TEMPO --- */
 .weather {
     display: flex;
     flex-direction: column;
@@ -67,6 +70,7 @@ input:focus {
     font-size: 20px;
 }
 
+/* --- FOOTER --- */
 a {
     text-decoration: none;
     color: white;
