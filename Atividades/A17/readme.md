@@ -1,2 +1,2 @@
 # Projeto-AW1_IFSP
-Link do código é: https://igormozetic.github.io/Projeto-AW1_IFSP/Atividades/A16/
+Atividade A17 - Validação de Formulário de acordo com o vídeo, Mascara nos inputs de acordo com o vídeo e Atividade solicitada.
