@@ -106,7 +106,7 @@ EnviarBotao.addEventListener('click', () => {
             loadQuiz();
         } else {
             quiz.innerHTML = `
-                <h2 class="modal-recarregar">Parabéns, você rerspondeu corretamente ${pontos}/${quizData.length} questões.</h2>
+                <h2 class="modal-recarregar">Parabéns, você respondeu corretamente ${pontos}/${quizData.length} questões.</h2>
                 
                 <button onclick="location.reload()">Recarregar</button>
             `;
