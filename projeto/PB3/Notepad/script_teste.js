@@ -40,7 +40,7 @@ function addNovaNota({ titulo, corpo } = { titulo: "", corpo: "" }) {
 
     //inserindo no HTML
     nota.innerHTML = `
-        <div class="notas">
+        <div class="notas note">
             <div class="ferramentas">
                 <input class="titulo" type="text" name="input" maxlength="17">
                 <div>
@@ -48,8 +48,7 @@ function addNovaNota({ titulo, corpo } = { titulo: "", corpo: "" }) {
                     <button class="delete"><i class="fas fa-trash-alt"></i></button>
                 </div>
             </div>
-            <div class="main ${corpo ? "" : "hidden"}"></div>
-            <textarea class="${corpo ? "hidden" : ""}"></textarea>
+            <textarea></textarea>
         </div>
     `;
 
@@ -84,7 +83,7 @@ function addNovaNota({ titulo, corpo } = { titulo: "", corpo: "" }) {
     textArea.addEventListener("input", (e) => {
         const { value } = e.target;
 
-        main.innerHTML = marked(value);
+        textArea.innerHTML = marked(value);
 
         updateLS();
     });
@@ -92,7 +91,7 @@ function addNovaNota({ titulo, corpo } = { titulo: "", corpo: "" }) {
     inputTitle.addEventListener("input", (e) => {
         const { value } = e.target;
 
-        main.innerHTML = marked(value);
+        inputTitle.innerHTML = marked(value);
 
         updateLS();
     });
@@ -102,17 +101,15 @@ function addNovaNota({ titulo, corpo } = { titulo: "", corpo: "" }) {
 
 // Função de atualizar
 function updateLS() {
-    const divNotas = document.querySelectorAll(".notas");
+    const divNotas = document.querySelectorAll(".note");
 
     const notas = [];
 
     divNotas.forEach((nota) => {
-        if (!notas.includes(nota)) {
-            notas.push({
-                titulo: nota.querySelector('.titulo').value,
-                corpo: nota.querySelector('textarea').value
-            });
-        }
+        notas.push({
+            titulo: nota.querySelector('.titulo').value,
+            corpo: nota.querySelector('textarea').value
+        });
     });
 
     localStorage.setItem("notas", JSON.stringify(notas));
