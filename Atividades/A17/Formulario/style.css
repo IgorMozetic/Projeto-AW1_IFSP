@@ -33,8 +33,9 @@ body {
     margin: 30px auto 0;
     padding: 50px;
     /* background-color: rgb(193 54 54); */
-    background-color: rgb(50 149 54);
+    background-color: #e3e9f1;
     border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container-main .form .inputs {
@@ -47,12 +48,12 @@ body {
 }
 
 .container-main .form .inputs .input-group label{
-    color: white;
+    color: black;
     font-size: 1.1rem;
 }
 
 .container-main .form .inputs .input-group small{
-    color: white;
+    color: black;
 }
 
 .container-main .form .inputs .input-group input{
@@ -60,12 +61,12 @@ body {
     width: 100%;
     padding: 3px;
     /* background-color: rgb(193 54 54); */
-    background-color: rgb(50 149 54);
+    background-color: #e3e9f1;
     box-shadow: 0 0 0 0;
     border: 0 none;
     outline: 0; 
     border-bottom: 1px solid black;
-    color: white;
+    color: black;
     font-size: 0.9rem;
     height: 30px;
 }
@@ -84,13 +85,13 @@ body {
     border-radius: 30px;
     border: none;
     font-size: 1rem;
+    color: white;
 }
 
 .btnSubmit input:hover {
-    color: white;
     background-color: rgb(38 66 92);
 }
 
 .errorInput{
-    border: 1px solid rgb(189, 22, 45) !important;
+    border: 2px solid rgb(189, 22, 45) !important;
 }

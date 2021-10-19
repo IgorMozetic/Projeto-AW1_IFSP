@@ -65,7 +65,7 @@ btn.addEventListener('click', (event) => {
     const email = document.querySelector('#email')
     const senha = document.querySelector('#senha')
 
-    if (nome.value == "") {
+    if (nome.value.length <= 2) {
         nome.classList.add("errorInput")
     } else {
         nome.classList.remove("errorInput")
