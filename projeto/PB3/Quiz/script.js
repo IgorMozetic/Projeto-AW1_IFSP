@@ -92,6 +92,10 @@ function getSelected() {
         }
     });
 
+    if (!resposta) {
+        swal("É necessário selecionar uma alternativa!")
+    }
+
     //retorna undefined ou id do checked
     return resposta
 }

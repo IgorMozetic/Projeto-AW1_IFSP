@@ -19,7 +19,7 @@
     width: 78px;
     background: #11101D;
     padding: 6px 14px;
-    z-index: 10;
+    z-index: 150;
     transition: all 0.5s ease;
   }
   .sidebar.open{
@@ -278,34 +278,73 @@ a {
     color: white;
   }
   
-  #lista_rodape {
-    width: calc(100% - 78px);
-    position: relative;
-    list-style: none;
-    background-color: #262626;
-    height: 4rem;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 1rem;
-    left: 78px;
-    transition: all 0.5s ease;
-  }
+#lista_rodape {
+  width: calc(100% - 78px);
+  position: relative;
+  list-style: none;
+  background-color: #262626;
+  height: 4rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 1rem;
+  left: 78px;
+  transition: all 0.5s ease;
+}
 
-  #lista_rodape li {
-    margin: 0;
+#lista_rodape li {
+  margin: 0;
 }
   
-  .redes_sociais {
-    width: 2rem;
-    height: 2rem;
-  }
+.redes_sociais {
+  width: 2rem;
+  height: 2rem;
+}
 
-  .sidebar.open ~ footer > #lista_rodape{
-    left: 250px;
-    width: calc(100% - 250px);
-  }
+.sidebar.open ~ footer > #lista_rodape{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.swal-footer {
+  text-align: center;
+}
+
+.swal-text {
+  font-weight: bold;
+  text-align: center;
+}
+
+.swal-button {
+  background-color: rgb(5, 126, 80);
+}
+
+.swal-button:hover {
+  background-color: rgb(3, 77, 48);
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: rgb(5, 126, 80);
+}
+
+.swal-overlay--show-modal {
+  width: calc(100% - 78px);
+  margin-left: 78px;
+  transition: all 0.5s ease;
+  z-index: 100;
+}
+
+.swal-modal {
+  z-index: 101;
+}
+
+.sidebar.open ~ .swal-overlay--show-modal{
+  left: 250px;
+  margin-left: 0;
+  width: calc(100% - 250px);
+  transition: all 0.5s ease;
+}
 
 /* --- RESPONSIVE --- */
 @media (max-width: 1000px) {
@@ -339,6 +378,9 @@ a {
         text-align: center;
         font-size: 1.3rem;
     }
+    .swal-modal {
+      width: 90%;
+    }
     .sidebar.open ~ .home-section {
         left: 0;
         right: 250px;
@@ -352,5 +394,12 @@ a {
     }
     #lista_rodape li {
         font-size: 1rem;
+    }
+
+    .sidebar.open ~ .swal-overlay--show-modal{
+      left: 0;
+      margin-left: 0;
+      right: 250px;
+      width: calc(100%);
     }
 }
