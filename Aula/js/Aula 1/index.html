@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <h1>Primeiro Script</h1>
+  <!-- <script>
+      window.alert("Olá mundo!")
+      window.confirm("Olá mundo!") // Caso OK retorna TRUE, caso CANCELAR retorna FALSE.
+      window.prompt("Olá mundo!") // Aparece uma pergunta para o usuário escrever.
+      document.write("Olá mundo!")
+    </script> -->
+  <hr />
+  <h2>Formulário</h2>
+  Valor 1: <input type="text" id="v1" /><br />
+  Valor 2: <input type="text" id="v2" />
+  <p id="res">Resposta Soma:</p>
+  <button type="button" onclick="soma()">Soma</button>
+  <script>
+    function soma() {
+      var v1 = Number(document.querySelector('#v1').value)
+      var v2 = Number(document.querySelector('#v2').value)
+      var total = v1 + v2;
+      document.querySelector('#res').innerHTML = `Reposta Soma: ${v1 + v2}`
+
+      document.getElementById('res').innerHTML =
+        'Resposta soma: ' +
+        total.toLocaleString('pt-BR', {
+          style: 'currency',
+          currency: 'BRL'
+        })
+    }
+  </script>
+</body>
+
+</html>
