@@ -1,2 +1,2 @@
 # Projeto-AW1_IFSP
-Projeto bimestral 3, HTML, CSS e JavaScript  <br>
+Projeto bimestral 4, Angular <br>
