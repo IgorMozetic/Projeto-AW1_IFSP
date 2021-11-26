@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>API ViaCep + IBGEs</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="">Integração API Viacep com a API do IBGE</h1>
+        <div class="form">
+            <div class="selecaoIbge">
+                <label for="opcaoApiIbge">Selecione </label>
+                <select name="opcaoApiIbge" id="select">
+                    <option value="" disabled selected>Escolha uma opção</option>
+                    <option value="distritos">Distritos</option>
+                    <option value="mesorregioes">Mesorregiões</option>
+                    <option value="microrregioes">Microrregiões</option>
+                    <option value="municipios">Municípios</option>
+                    <option value="regioes-imediatas">Regiões Imediatas</option>
+                    <option value="regioes-intermediarias">Regiões Intermediárias</option>
+                </select>
+            </div>
+            <div class="inserirCEP">
+                <label for="CEP">Insira um CEP </label>
+                <input type="text" id="cep" name="CEP" placeholder="CEP" autocomplete="off" data-js="cep">
+            </div>
+            <div class="button">
+                <input type="button" id="btn" value="Buscar">
+            </div>
+        </div>
+        <div class="IBGE">
+            <div class="title"></div>
+            <ul class="dados_IBGE">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
