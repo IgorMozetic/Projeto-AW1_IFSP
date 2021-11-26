@@ -32,21 +32,28 @@ const map = [
 
 btn.addEventListener('click', event => {
     fetch(`https://viacep.com.br/ws/${CEP.value.replaceAll('-','')}/json/`)
-    .then(response => {
-        return response.json()
-    })
+    .then(response => response.json())
     .then(data => {
         const UF = data.uf;
         const escolha_IBGE = document.querySelector("#select").value;
         if(escolha_IBGE !== '') {
-            dadosIBGE(UF, escolha_IBGE)
-        } else {
+            if(UF !== undefined) {
+                dadosIBGE(UF, escolha_IBGE)
+            } else {
+                IBGE.classList.remove('text')
+                title_dados.classList.add('display')
+                dados.innerHTML = `Por favor, insira o valor correto para o CEP`;
+                // dados.classList.add('modal')
+        }} else {
+            IBGE.classList.remove('text')
+            title_dados.classList.add('display')
             dados.innerHTML = `Por favor, selecione uma opção para que a busca seja feita`;
-            // dados.classList.add('modal')
-        }
+        } 
     })
     .catch(error => {
-        dados.innerHTML = `Ocorreu um erro`;
+        IBGE.classList.remove('text')
+        title_dados.classList.add('display')
+        dados.innerHTML = `Ocorreu um erro. Insira um valor para o CEP`;
     })
 });
 
@@ -64,6 +71,7 @@ function dadosIBGE(UF, escolha_IBGE) {
                 return e.nome_exibir
         }).join('')} de ${UF} </h2>`
         IBGE.classList.add('text')
+        title_dados.classList.remove('display')
         title_dados.innerHTML = title;
         dados.innerHTML = content;
     })

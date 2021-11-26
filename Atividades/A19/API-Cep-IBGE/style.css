@@ -89,6 +89,8 @@ input:focus {
   color: #5aadf5;
   text-align: center;
   margin: 20px 0 0;
+  display: block;
+  visibility: visible;
 }
 
 .dados_IBGE {
@@ -108,6 +110,11 @@ input:focus {
   border-radius: 30px;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.display {
+  display: none;
+  visibility: hidden;
 }
 
 .text::-webkit-scrollbar {
