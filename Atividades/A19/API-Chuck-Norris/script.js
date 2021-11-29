@@ -21,6 +21,7 @@ inputWord.addEventListener('focusout', event => {
         jokesDOM.innerHTML = content;
     })
     .catch(error => {
+        chuckNorrisDOM.classList.remove('text')
         jokesDOM.innerHTML = `Sorry, but that word is not in any joke`
     })
 });
