@@ -66,10 +66,11 @@ function dadosIBGE(UF, escolha_IBGE) {
         const content = data.map(eachName => {
             return `<li class="eachname">${eachName.nome}</li>`
         }).join('')
-        const title = `<h2> ${map.map(e => {
-            if(e.nome == escolha_IBGE)
-                return e.nome_exibir
-        }).join('')} de ${UF} </h2>`
+        // const title = `<h2> ${map.map(e => {
+        //     if(e.nome == escolha_IBGE)
+        //         return e.nome_exibir
+        // }).join('')} de ${UF} </h2>`
+        const title = `<h2> ${map.find(e => e.nome == escolha_IBGE).nome_exibir} de ${UF} </h2>`
         IBGE.classList.add('text')
         title_dados.classList.remove('display')
         title_dados.innerHTML = title;
