@@ -42,66 +42,66 @@ const map = {
   "regioes-intermediarias": "Regiões Intermediárias",
 };
 
-// ---------------------------------- THEN ----------------------------------
+/* ---------------------------------- THEN ---------------------------------- */
 
-btn.addEventListener("click", (event) => {
-  fetch(`https://viacep.com.br/ws/${CEP.value.replaceAll("-", "")}/json/`)
-    .then((response) => response.json())
-    .then((data) => {
-      const UF = data.uf;
-      const escolha_IBGE = document.querySelector("#select").value;
-      if (escolha_IBGE !== "") {
-        if (UF !== undefined) {
-          dadosIBGE(UF, escolha_IBGE);
-        } else {
-          IBGE.classList.remove("text");
-          title_dados.classList.add("display");
-          dados.innerHTML = `Por favor, insira o valor correto para o CEP`;
-          // dados.classList.add('modal')
-        }
-      } else {
-        IBGE.classList.remove("text");
-        title_dados.classList.add("display");
-        dados.innerHTML = `Por favor, selecione uma opção para que a busca seja feita`;
-      }
-    })
-    .catch((error) => {
-      IBGE.classList.remove("text");
-      title_dados.classList.add("display");
-      dados.innerHTML = `Ocorreu um erro. Insira um valor para o CEP`;
-    });
-});
+// btn.addEventListener("click", (event) => {
+//   fetch(`https://viacep.com.br/ws/${CEP.value.replaceAll("-", "")}/json/`)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       const UF = data.uf;
+//       const escolha_IBGE = document.querySelector("#select").value;
+//       if (escolha_IBGE !== "") {
+//         if (UF !== undefined) {
+//           dadosIBGE(UF, escolha_IBGE);
+//         } else {
+//           IBGE.classList.remove("text");
+//           title_dados.classList.add("display");
+//           dados.innerHTML = `Por favor, insira o valor correto para o CEP`;
+//           // dados.classList.add('modal')
+//         }
+//       } else {
+//         IBGE.classList.remove("text");
+//         title_dados.classList.add("display");
+//         dados.innerHTML = `Por favor, selecione uma opção para que a busca seja feita`;
+//       }
+//     })
+//     .catch((error) => {
+//       IBGE.classList.remove("text");
+//       title_dados.classList.add("display");
+//       dados.innerHTML = `Ocorreu um erro. Insira um valor para o CEP`;
+//     });
+// });
 
-function dadosIBGE(UF, escolha_IBGE) {
-  fetch(
-    `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${UF}/${escolha_IBGE}`
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      const content = data
-        .map((eachName) => {
-          return `<li class="eachname">${eachName.nome}</li>`;
-        })
-        .join("");
-      // const title = `<h2> ${map.map(e => {
-      //     if(e.nome == escolha_IBGE)
-      //         return e.nome_exibir
-      // }).join('')} de ${UF} </h2>`
-      // const title = `<h2> ${map.find(e => e.nome == escolha_IBGE).nome_exibir} de ${UF} </h2>`
-      const title = `<h2> ${map[escolha_IBGE]} de ${UF} </h2>`;
-      IBGE.classList.add("text");
-      title_dados.classList.remove("display");
-      title_dados.innerHTML = title;
-      dados.innerHTML = content;
-    })
-    .catch((error) => {
-      console.log("deu tudo errado");
-    });
-}
+// function dadosIBGE(UF, escolha_IBGE) {
+//   fetch(
+//     `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${UF}/${escolha_IBGE}`
+//   )
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       const content = data
+//         .map((eachName) => {
+//           return `<li class="eachname">${eachName.nome}</li>`;
+//         })
+//         .join("");
+//       // const title = `<h2> ${map.map(e => {
+//       //     if(e.nome == escolha_IBGE)
+//       //         return e.nome_exibir
+//       // }).join('')} de ${UF} </h2>`
+//       // const title = `<h2> ${map.find(e => e.nome == escolha_IBGE).nome_exibir} de ${UF} </h2>`
+//       const title = `<h2> ${map[escolha_IBGE]} de ${UF} </h2>`;
+//       IBGE.classList.add("text");
+//       title_dados.classList.remove("display");
+//       title_dados.innerHTML = title;
+//       dados.innerHTML = content;
+//     })
+//     .catch((error) => {
+//       console.log("deu tudo errado");
+//     });
+// }
 
-// ---------------------------------- ASYNC/AWAIT ----------------------------------
+/* ---------------------------------- ASYNC/AWAIT ---------------------------------- */
 async function cep(CEP) {
   try {
     const response = await fetch(
@@ -145,8 +145,8 @@ btn.addEventListener("click", async (event) => {
     return;
   }
 
-  const IBGE = await dadosIBGE(UF, escolha_IBGE);
-  const content = IBGE.map((eachName) => {
+  const IBGE_data = await dadosIBGE(UF, escolha_IBGE);
+  const content = IBGE_data.map((eachName) => {
     return `<li class="eachname">${eachName.nome}</li>`;
   }).join("");
   const title = `<h2> ${map[escolha_IBGE]} de ${UF} </h2>`;
@@ -156,7 +156,7 @@ btn.addEventListener("click", async (event) => {
   dados.innerHTML = content;
 });
 
-// ---------------------------------- MÁSCARA INPUT ----------------------------------
+/* ---------------------------------- MÁSCARA INPUT ---------------------------------- */
 const masks = {
   cep(value) {
     return value
