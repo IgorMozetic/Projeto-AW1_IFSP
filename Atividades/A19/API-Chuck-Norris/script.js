@@ -33,6 +33,10 @@ inputWord.addEventListener("focusout", (event) => {
     })
     .catch((error) => {
       chuckNorrisDOM.classList.remove("text");
-      jokesDOM.innerHTML = error.message;
+      if (error.message == "Request failed with status code 400") {
+        jokesDOM.textContent = "Por favor, digite algo entre 3 até 120 letras";
+      } else {
+        jokesDOM.textContent = error.message;
+      }
     });
 });
