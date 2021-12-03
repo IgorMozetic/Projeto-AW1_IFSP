@@ -1,0 +1,6 @@
+{
+    "chave1": "valor", //valor de string
+    "chave2": 123123, //valor de números
+    "chave3": [], //valor de array
+    "chave4": {}, //valor de objetos
+}
