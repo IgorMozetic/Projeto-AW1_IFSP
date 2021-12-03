@@ -45,9 +45,11 @@ const map = {
 /* ---------------------------------- THEN ---------------------------------- */
 
 btn.addEventListener("click", (event) => {
-  fetch(`https://viacep.com.br/ws/${CEP.value.replaceAll("-", "")}/json/`)
-    .then((response) => response.json())
-    .then((data) => {
+  const urlCEP = "https://viacep.com.br/ws/";
+  axios
+    .get(`${urlCEP}${CEP.value.replaceAll("-", "")}/json/`)
+    .then((response) => {
+      const data = response.data;
       const UF = data.uf;
       const escolha_IBGE = document.querySelector("#select").value;
       if (escolha_IBGE !== "") {
@@ -65,22 +67,21 @@ btn.addEventListener("click", (event) => {
     .catch((error) => {
       IBGE.classList.remove("text");
       title_dados.classList.add("display");
-      if (error.message == "Failed to fetch") {
-        dados.innerHTML = "Por favor, insira o valor correto para o CEP";
+      if (error.message == "Network Error") {
+        dados.textContent = "Por favor, insira o valor correto para o CEP";
       } else {
-        dados.innerHTML = error.message;
+        dados.textContent = error.message;
       }
     });
 });
 
 function dadosIBGE(UF, escolha_IBGE) {
-  fetch(
-    `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${UF}/${escolha_IBGE}`
-  )
+  const urlIBGE =
+    "https://servicodados.ibge.gov.br/api/v1/localidades/estados/";
+  axios
+    .get(`${urlIBGE}${UF}/${escolha_IBGE}`)
     .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
+      const data = response.data;
       const content = data
         .map((eachName) => {
           return `<li class="eachname">${eachName.nome}</li>`;
@@ -98,7 +99,9 @@ function dadosIBGE(UF, escolha_IBGE) {
       dados.innerHTML = content;
     })
     .catch((error) => {
-      console.log("deu tudo errado");
+      IBGE.classList.remove("text");
+      title_dados.classList.add("display");
+      dados.textContent = `Erro na API do IBGE`;
     });
 }
 

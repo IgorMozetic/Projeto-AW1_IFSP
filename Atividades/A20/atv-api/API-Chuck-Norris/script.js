@@ -3,21 +3,20 @@ const jokesDOM = document.querySelector(".jokes");
 const inputWord = document.querySelector("[name=word]");
 
 inputWord.addEventListener("focusout", (event) => {
-  fetch(
-    `https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/search?query=${inputWord.value}`,
-    {
+  const url =
+    "https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/search?query=";
+  axios
+    .get(`${url}${inputWord.value}`, {
       method: "GET",
       headers: {
         accept: "application/json",
         "x-rapidapi-host": "matchilling-chuck-norris-jokes-v1.p.rapidapi.com",
         "x-rapidapi-key": "6060db6b2emshc96fe8a99392e91p10628djsna96785c133fc",
       },
-    }
-  )
-    .then((response) => {
-      return response.json();
     })
-    .then((jokes) => {
+    .then((response) => {
+      console.log(response);
+      const jokes = response.data;
       const content = jokes.result
         .map((eachJoke) => {
           eachJoke.value.replaceAll("# ", "");
@@ -33,6 +32,10 @@ inputWord.addEventListener("focusout", (event) => {
     })
     .catch((error) => {
       chuckNorrisDOM.classList.remove("text");
-      jokesDOM.innerHTML = error.message;
+      if (error.message == "Request failed with status code 400") {
+        jokesDOM.textContent = "Por favor, digite algo entre 3 até 120 letras";
+      } else {
+        jokesDOM.textContent = error.message;
+      }
     });
 });
