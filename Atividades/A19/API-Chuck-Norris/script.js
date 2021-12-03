@@ -33,6 +33,6 @@ inputWord.addEventListener("focusout", (event) => {
     })
     .catch((error) => {
       chuckNorrisDOM.classList.remove("text");
-      jokesDOM.innerHTML = `Sorry, but that word is not in any joke`;
+      jokesDOM.innerHTML = error.message;
     });
 });
