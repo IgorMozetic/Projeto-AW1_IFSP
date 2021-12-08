@@ -15,7 +15,6 @@ inputWord.addEventListener("focusout", (event) => {
       },
     })
     .then((response) => {
-      console.log(response);
       const jokes = response.data;
       const content = jokes.result
         .map((eachJoke) => {
